@@ -28,13 +28,6 @@ export const RingViewer: React.FC<RingViewerProps> = ({ state, onToggleFullscree
         style={{ touchAction: 'none' }}
       />
 
-      {/* Watermark Logo (top-left) */}
-      <img
-        alt="Watermark"
-        src="/assets/logo.png"
-        className="absolute top-6 left-6 h-8 z-20 w-auto object-contain pointer-events-none select-none opacity-70"
-      />
-
       {/* Rotational gesture hint hand icon (center bottom) */}
       {!hasInteracted && (
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-12 pointer-events-none select-none flex flex-col items-center justify-center transition-opacity duration-700">

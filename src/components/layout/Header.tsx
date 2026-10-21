@@ -10,14 +10,7 @@ export const Header: React.FC = () => {
             className="flex items-center gap-2 md:scale-110 transition-transform"
             href="/"
           >
-            <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
-              <img
-                alt="Carpediam"
-                className="w-full h-full object-contain"
-                src="/assets/logo.png"
-              />
-            </div>
-            <span className="font-bold text-gray-900 text-lg tracking-tight">Carpediam</span>
+            <span className="font-bold text-gray-900 text-lg md:text-xl tracking-tight">Carpediam</span>
           </a>
         </div>
         <div className="flex justify-end">
