@@ -1,0 +1,211 @@
+{
+  "header": [
+    {
+      "tag": "header",
+      "className": "w-full bg-white border-b border-gray-200 flex-shrink-0 z-30",
+      "id": "",
+      "text": "Alloyum Sign in",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 77
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "\"Red Hat Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "",
+        "boxShadow": "none"
+      }
+    }
+  ],
+  "nav": [],
+  "main": [],
+  "footer": [],
+  "canvas": [
+    {
+      "tag": "canvas",
+      "className": "w-full h-full absolute inset-0 mix-blend-multiply dark:mix-blend-normal",
+      "id": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 77,
+        "width": 1008,
+        "height": 823
+      },
+      "styles": {
+        "display": "block",
+        "position": "absolute",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "\"Red Hat Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(0, 0, 0)",
+        "boxShadow": "none"
+      }
+    }
+  ],
+  "[class*=\"header\"]": [],
+  "[class*=\"sidebar\"]": [],
+  "[class*=\"panel\"]": [],
+  "[class*=\"toolbar\"]": [],
+  "[class*=\"price\"]": [],
+  "[class*=\"title\"]": [],
+  "[class*=\"description\"]": [],
+  "[class*=\"tab\"]": [],
+  "[class*=\"metal\"]": [],
+  "[class*=\"carat\"]": [],
+  "[class*=\"shape\"]": [],
+  "button": [
+    {
+      "tag": "button",
+      "className": "w-10 h-10 flex items-center justify-center rounded-lg bg-white/80 backdrop-blur-sm border border-gray-200/50 text-gray-700 hover:text-gray-900 hover:bg-white hover:shadow-md transition-all duration-300",
+      "id": "",
+      "text": "",
+      "rect": {
+        "x": 944,
+        "y": 836,
+        "width": 40,
+        "height": 40
+      },
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "backgroundColor": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+        "color": "oklch(0.373 0.034 259.733)",
+        "fontFamily": "\"Red Hat Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "8px",
+        "border": "1px solid oklab(0.928 -0.000571842 -0.00597269 / 0.5)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "button",
+      "className": "px-0 py-2 text-[14px] font-medium transition-all duration-300 relative hover-indicator",
+      "id": "",
+      "text": "Engagement Ring",
+      "rect": {
+        "x": 1033,
+        "y": 254.5,
+        "width": 112.5,
+        "height": 37
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(17, 24, 39)",
+        "fontFamily": "\"Red Hat Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "21px",
+        "padding": "8px 0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(17, 24, 39)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "button",
+      "className": "px-0 py-2 text-[14px] font-medium transition-all duration-300 relative hover-indicator",
+      "id": "",
+      "text": "Eternity Ring",
+      "rect": {
+        "x": 1177.5,
+        "y": 254.5,
+        "width": 81.15625,
+        "height": 37
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(107, 114, 128)",
+        "fontFamily": "\"Red Hat Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "21px",
+        "padding": "8px 0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px solid rgb(107, 114, 128)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "button",
+      "className": "transition-all duration-300 flex items-center justify-center overflow-hidden relative cursor-pointer rounded-[3px] bg-transparent border border-transparent ",
+      "id": "",
+      "text": "",
+      "rect": {
+        "x": 1035,
+        "y": 343.5,
+        "width": 42,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "position": "relative",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "\"Red Hat Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "3px",
+        "border": "1px solid rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "tag": "button",
+      "className": "transition-all duration-300 flex items-center justify-center overflow-hidden relative cursor-pointer rounded-[3px] bg-transparent border border-transparent ",
+      "id": "",
+      "text": "",
+      "rect": {
+        "x": 1089,
+        "y": 343.5,
+        "width": 42,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "position": "relative",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "\"Red Hat Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "3px",
+        "border": "1px solid rgba(0, 0, 0, 0)",
+        "boxShadow": "none"
+      }
+    }
+  ]
+}

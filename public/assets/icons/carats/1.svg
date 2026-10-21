@@ -1,0 +1,16 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_1_451" fill="white">
+<path d="M0 0H50V50H0V0Z"/>
+</mask>
+<path d="M25.0008 33.0001C29.4191 33.0001 33.0008 29.4183 33.0008 25C33.0008 20.5817 29.4191 17 25.0008 17C20.5825 17 17.0007 20.5817 17.0007 25C17.0007 29.4183 20.5825 33.0001 25.0008 33.0001Z" fill="white" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10"/>
+<path d="M25.0008 20.5148L28.1335 21.8131L29.431 24.9458L28.1335 28.0792L25.0008 29.3767L21.8673 28.0792L20.5698 24.9458L21.8673 21.8131L25.0008 20.5148Z" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10"/>
+<path d="M30.6525 27.2658V30.6547H27.3903" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M27.3005 19.3433H30.6525V22.6026" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M19.3409 22.696V19.3433H22.6126" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M22.7291 30.6547H19.3409V27.3751" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M28.1335 32.3633L27.3881 30.6504L25.0007 33.0001L22.7053 30.6634L21.8673 32.3633" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M21.8673 17.6368L22.6127 19.3497L25.0007 17L27.2955 19.336L28.1335 17.6368" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M17.6375 28.1291L19.3497 27.3837L17 24.9956L19.3367 22.7009L17.6368 21.8629" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M32.3655 21.8629L30.6526 22.6083L33.0023 24.9956L30.6663 27.2911L32.3655 28.1291" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10" stroke-linejoin="bevel"/>
+<path d="M22.6127 19.3497L21.8673 21.8131L19.3367 22.701L20.5698 24.9458L19.3497 27.3838L21.8673 28.0792L22.7053 30.6634L25.0007 29.3767L27.3881 30.6504L28.1334 28.0792L30.6662 27.2912L29.431 24.9458L30.6525 22.6084L28.1334 21.8131L27.2954 19.336L25.0007 20.5148L22.6127 19.3497Z" stroke="#686868" stroke-width="0.5" stroke-miterlimit="10"/>
+</svg>

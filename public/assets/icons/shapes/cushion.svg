@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 425.2 425.2" style="enable-background:new 0 0 425.2 425.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:bevel;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st2" d="M319.84,212.6c0-11.88,2.28-60-16.42-90.83c-30.83-18.69-78.94-16.42-90.83-16.42s-60-2.28-90.83,16.42
+	c-18.69,30.83-16.42,78.94-16.42,90.83c0,11.88-2.28,60,16.42,90.83c30.83,18.69,78.94,16.42,90.83,16.42s60,2.28,90.83-16.42
+	C322.11,272.59,319.84,224.48,319.84,212.6z"/>
+<g>
+	<g>
+		<polygon class="st1" points="121.77,121.77 166.39,148.82 171.21,171.21 148.82,166.39 		"/>
+		<polyline class="st1" points="166.39,148.82 212.6,165.73 171.21,171.21 165.73,212.6 148.82,166.39 105.36,212.6 		"/>
+		<line class="st1" x1="148.82" y1="166.39" x2="107.17" y2="168.95"/>
+	</g>
+	<g>
+		<polygon class="st1" points="303.42,121.77 258.8,148.82 253.98,171.21 276.38,166.39 		"/>
+		<polyline class="st1" points="256.23,107.17 258.8,148.82 212.6,105.36 166.39,148.82 168.96,107.17 		"/>
+		<line class="st1" x1="276.38" y1="166.39" x2="318.03" y2="168.95"/>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon class="st1" points="121.77,303.42 166.39,276.38 171.21,253.98 148.82,258.8 		"/>
+		<polyline class="st1" points="166.39,276.38 212.6,259.46 171.21,253.98 165.73,212.6 148.82,258.8 105.36,212.6 		"/>
+		<line class="st1" x1="148.82" y1="258.8" x2="107.17" y2="256.25"/>
+	</g>
+	<g>
+		<polygon class="st1" points="303.42,303.42 258.8,276.38 253.98,253.98 276.38,258.8 		"/>
+		<polyline class="st1" points="256.23,318.03 258.8,276.38 212.6,319.84 166.39,276.38 168.96,318.03 		"/>
+		<polyline class="st1" points="258.8,276.38 212.6,259.46 253.98,253.98 259.46,212.6 276.38,258.8 319.84,212.6 319.84,212.6 
+			276.38,166.39 259.46,212.6 253.98,171.21 212.6,165.73 258.8,148.82 		"/>
+		<line class="st1" x1="276.38" y1="258.8" x2="318.03" y2="256.25"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 425.2 425.2" style="enable-background:new 0 0 425.2 425.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:bevel;stroke-miterlimit:10;}
+</style>
+<g>
+	<line class="st1" x1="251.57" y1="110.55" x2="251.57" y2="314.65"/>
+	<line class="st1" x1="173.62" y1="314.65" x2="173.62" y2="110.55"/>
+	<ellipse class="st1" cx="212.6" cy="212.6" rx="75" ry="119.48"/>
+	<line class="st1" x1="137.6" y1="212.6" x2="151.13" y2="212.6"/>
+	<polyline class="st1" points="173.62,110.5 212.6,124.44 212.6,93.12 	"/>
+	<polyline class="st1" points="251.63,110.55 212.6,124.44 225.35,147.69 199.84,147.69 212.6,124.44 	"/>
+	<polyline class="st1" points="287.6,212.6 274.06,212.6 283.43,173.23 251.57,151.51 225.35,147.69 251.57,184.43 274.06,212.6 
+		283.43,251.96 251.57,273.69 274.06,281.08 	"/>
+	<polyline class="st1" points="274.06,212.6 251.57,240.77 225.35,277.51 212.6,300.76 212.6,332.08 	"/>
+	<polyline class="st1" points="151.13,281.08 173.62,273.69 199.84,277.51 212.6,300.76 173.57,314.65 	"/>
+	<polyline class="st1" points="173.62,151.51 141.74,173.6 151.13,212.6 141.74,251.92 173.62,273.69 	"/>
+	<line class="st1" x1="212.6" y1="300.76" x2="251.63" y2="314.65"/>
+	<line class="st1" x1="251.57" y1="151.51" x2="274.06" y2="144.12"/>
+	<polyline class="st1" points="251.57,273.69 225.35,277.51 199.84,277.51 173.62,241.07 151.13,212.6 173.62,184.43 199.84,147.69 
+		173.62,151.51 151.13,144.12 	"/>
+</g>
+</svg>

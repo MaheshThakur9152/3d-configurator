@@ -1,0 +1,749 @@
+{
+  "name": "Scene",
+  "type": "Group",
+  "visible": true,
+  "children": [
+    {
+      "name": "HD-HHS-Oval-103dm",
+      "type": "Object3D",
+      "visible": true,
+      "children": [
+        {
+          "name": "mesh_0",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_1",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_2",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_3",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_4",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_5",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_6",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_7",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_8",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_9",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_10",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_11",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_12",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_13",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_14",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_15",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_16",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_17",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_18",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_19",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_20",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_21",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 01",
+          "children": []
+        },
+        {
+          "name": "mesh_22",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_23",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_24",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_25",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        },
+        {
+          "name": "mesh_26",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 02",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "SH-Pave-13dm",
+      "type": "Object3D",
+      "visible": true,
+      "children": [
+        {
+          "name": "mesh_0",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_1",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_2",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_3",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_4",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_5",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_6",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_7",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_8",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_9",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_10",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_11",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_12",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_13",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_14",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_15",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_16",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_17",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_18",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_19",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_20",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_21",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_22",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_23",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_24",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_25",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_26",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_27",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_28",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_29",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_30",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_31",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_32",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_33",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_34",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_35",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_36",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_37",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_38",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_39",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_40",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_41",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_42",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_43",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_44",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_45",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_46",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_47",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_48",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_49",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_50",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_51",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_52",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_53",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_54",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_55",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_56",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_57",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_58",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_59",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_60",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_61",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_62",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_63",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_64",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Metal 01",
+          "children": []
+        },
+        {
+          "name": "mesh_65",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_66",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_67",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_68",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_69",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_70",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_71",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_72",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_73",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_74",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_75",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        },
+        {
+          "name": "mesh_76",
+          "type": "Mesh",
+          "visible": true,
+          "material": "Gem 02",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

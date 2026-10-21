@@ -1,0 +1,398 @@
+[
+  {
+    "name": "https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap",
+    "initiatorType": "link",
+    "transferSize": 980,
+    "decodedBodySize": 10990
+  },
+  {
+    "name": "https://alloyum.com/assets/index-DhcL4EOB.css",
+    "initiatorType": "link",
+    "transferSize": 15005,
+    "decodedBodySize": 96238
+  },
+  {
+    "name": "https://alloyum.com/assets/index-CcuQmEDV.js",
+    "initiatorType": "script",
+    "transferSize": 669526,
+    "decodedBodySize": 2363480
+  },
+  {
+    "name": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://releases.ijewel3d.com/libs/webgi-v0/bundle-0.22.1.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://alloyum.com/cdn-cgi/rum?",
+    "initiatorType": "xmlhttprequest",
+    "transferSize": 300,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://api.alloyum.com/api/projects/public/demo",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://alloyum.com/logo.png",
+    "initiatorType": "other",
+    "transferSize": 22388,
+    "decodedBodySize": 22088
+  },
+  {
+    "name": "https://alloyum.com/logo.png",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 22088
+  },
+  {
+    "name": "https://unpkg.com/meshoptimizer@0.20.0/meshopt_decoder.module.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_3_pv_y_da7fd8fdec.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_f_2_y_c176961344.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_8_d_y_e31d8dac2e.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_ch_2_y_dcd0fd0692.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_pv_1_y_96c888c667.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_pv_2_y_2aca262a9f.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_pv_3_y_8fc25a4c76.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_pv_4_y_3e82c9bd70.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_pl_2_y_2328ce72e7.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_pl_4_y_965a228dc1.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_pl_3_y_768b9ea224.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_pl_5_y_2db5949b30.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_u_2_y_f54e4d2a78.png?h=ijewel3d.com",
+    "initiatorType": "img",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://alloyum.com/icons/metals/yellow-gold.png",
+    "initiatorType": "img",
+    "transferSize": 4698,
+    "decodedBodySize": 4398
+  },
+  {
+    "name": "https://alloyum.com/icons/metals/rose-gold.png",
+    "initiatorType": "img",
+    "transferSize": 4747,
+    "decodedBodySize": 4447
+  },
+  {
+    "name": "https://alloyum.com/icons/shapes/cushion.svg",
+    "initiatorType": "img",
+    "transferSize": 1071,
+    "decodedBodySize": 2300
+  },
+  {
+    "name": "https://alloyum.com/icons/metals/white-gold.png",
+    "initiatorType": "img",
+    "transferSize": 184170,
+    "decodedBodySize": 183870
+  },
+  {
+    "name": "https://alloyum.com/icons/shapes/emerald.svg",
+    "initiatorType": "img",
+    "transferSize": 981,
+    "decodedBodySize": 1789
+  },
+  {
+    "name": "https://alloyum.com/icons/shapes/oval.svg",
+    "initiatorType": "img",
+    "transferSize": 1001,
+    "decodedBodySize": 1831
+  },
+  {
+    "name": "https://alloyum.com/icons/shapes/pear.svg",
+    "initiatorType": "img",
+    "transferSize": 1149,
+    "decodedBodySize": 2454
+  },
+  {
+    "name": "https://alloyum.com/icons/head_style/halo.svg",
+    "initiatorType": "img",
+    "transferSize": 1229,
+    "decodedBodySize": 3633
+  },
+  {
+    "name": "https://alloyum.com/icons/shapes/round.svg",
+    "initiatorType": "img",
+    "transferSize": 1006,
+    "decodedBodySize": 1854
+  },
+  {
+    "name": "https://alloyum.com/icons/head_style/hidden_halo.svg",
+    "initiatorType": "img",
+    "transferSize": 1222,
+    "decodedBodySize": 3629
+  },
+  {
+    "name": "https://alloyum.com/icons/head_style/secret_hidden_halo.svg",
+    "initiatorType": "img",
+    "transferSize": 1221,
+    "decodedBodySize": 3623
+  },
+  {
+    "name": "https://alloyum.com/icons/head_style/4_prongs.svg",
+    "initiatorType": "img",
+    "transferSize": 3395,
+    "decodedBodySize": 10980
+  },
+  {
+    "name": "https://alloyum.com/icons/head_style/6_prongs.svg",
+    "initiatorType": "img",
+    "transferSize": 3586,
+    "decodedBodySize": 12628
+  },
+  {
+    "name": "https://alloyum.com/icons/head_style/secret_bazel.svg",
+    "initiatorType": "img",
+    "transferSize": 1211,
+    "decodedBodySize": 3634
+  },
+  {
+    "name": "https://alloyum.com/icons/head_style/tulip.svg",
+    "initiatorType": "img",
+    "transferSize": 38987,
+    "decodedBodySize": 56093
+  },
+  {
+    "name": "https://alloyum.com/icons/gemstones/blue_sapphire.svg",
+    "initiatorType": "img",
+    "transferSize": 87193,
+    "decodedBodySize": 124364
+  },
+  {
+    "name": "https://alloyum.com/icons/gemstones/diamond.svg",
+    "initiatorType": "img",
+    "transferSize": 69942,
+    "decodedBodySize": 96061
+  },
+  {
+    "name": "https://alloyum.com/icons/gemstones/ruby.svg",
+    "initiatorType": "img",
+    "transferSize": 70127,
+    "decodedBodySize": 96355
+  },
+  {
+    "name": "https://alloyum.com/icons/gemstones/emerald.svg",
+    "initiatorType": "img",
+    "transferSize": 74844,
+    "decodedBodySize": 102894
+  },
+  {
+    "name": "https://alloyum.com/icons/gemstones/aquamarine.svg",
+    "initiatorType": "img",
+    "transferSize": 70436,
+    "decodedBodySize": 97076
+  },
+  {
+    "name": "https://alloyum.com/icons/gemstones/pink_diamond.svg",
+    "initiatorType": "img",
+    "transferSize": 72941,
+    "decodedBodySize": 99913
+  },
+  {
+    "name": "https://alloyum.com/icons/gemstones/yellow_sapphire.svg",
+    "initiatorType": "img",
+    "transferSize": 167624,
+    "decodedBodySize": 232907
+  },
+  {
+    "name": "https://alloyum.com/icons/carats/0.5.svg",
+    "initiatorType": "img",
+    "transferSize": 885,
+    "decodedBodySize": 2144
+  },
+  {
+    "name": "https://alloyum.com/icons/carats/1.svg",
+    "initiatorType": "img",
+    "transferSize": 938,
+    "decodedBodySize": 2217
+  },
+  {
+    "name": "https://alloyum.com/icons/carats/2.svg",
+    "initiatorType": "img",
+    "transferSize": 903,
+    "decodedBodySize": 2136
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/ss_21_e244f4ce9c.vjson?h=ijewel3d.com",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://packs.ijewel3d.com/files/env_gem_022_35a7873253.exr",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://packs.ijewel3d.com/files/env_metal_001_d01c4504e0.hdr",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/hd_hhs_oval_10_b4e0d59485.glb?h=ijewel3d.com",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/sh_pave_1_e1f34114c3.glb?h=ijewel3d.com",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://cdn.jsdelivr.net/gh/google/draco@1.4.1/javascript/draco_decoder.js",
+    "initiatorType": "fetch",
+    "transferSize": 130094,
+    "decodedBodySize": 712852
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/ss_21_e244f4ce9c.vjson?h=ijewel3d.com",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://packs.ijewel3d.com/files/env_gem_022_35a7873253.exr",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://packs.ijewel3d.com/files/env_metal_001_d01c4504e0.hdr",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/white_gold_ff041b39c6.pmat?h=ijewel3d.com",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/diamond_c0f8225706.dmat?h=ijewel3d.com",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://alloyum.com/cdn-cgi/rum?",
+    "initiatorType": "beacon",
+    "transferSize": 300,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://ijewel3d.com/sdk/verify",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/et_plain_03_5f3ab7d528.glb?h=ijewel3d.com",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/et_9_diamods_c45f004d46.glb?h=ijewel3d.com",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://api.alloyum.com/api/price/demo/calculate-price",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/et_channel_1_b25fb90a87.glb?h=ijewel3d.com",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://drive-weur-1.ijewel3d.com/files/et_diamond_1_6553467415.glb?h=ijewel3d.com",
+    "initiatorType": "fetch",
+    "transferSize": 0,
+    "decodedBodySize": 0
+  }
+]

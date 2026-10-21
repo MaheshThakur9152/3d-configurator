@@ -1,0 +1,1282 @@
+{
+  "imgs": [
+    {
+      "type": "img",
+      "src": "https://alloyum.com/logo.png",
+      "alt": "Alloyum",
+      "className": "w-full h-full object-contain",
+      "rect": {
+        "x": 461.91485595703125,
+        "y": 24.799999237060547,
+        "width": 26.399993896484375,
+        "height": 26.400001525878906,
+        "top": 24.799999237060547,
+        "right": 488.3148498535156,
+        "bottom": 51.20000076293945,
+        "left": 461.91485595703125
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/logo.png",
+      "alt": "Watermark",
+      "className": "absolute top-6 left-6 h-8 z-20 w-auto object-contain pointer-events-none select-none opacity-70 ",
+      "rect": {
+        "x": 24,
+        "y": 101,
+        "width": 29.890625,
+        "height": 32,
+        "top": 101,
+        "right": 53.890625,
+        "bottom": 133,
+        "left": 24
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_3_pv_y_da7fd8fdec.png?h=ijewel3d.com",
+      "alt": "SH 3Pave",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 407.25,
+        "width": 40,
+        "height": 40,
+        "top": 407.25,
+        "right": 791.796875,
+        "bottom": 447.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_3_pv_y_da7fd8fdec.png?h=ijewel3d.com",
+      "alt": "SH 3Pave",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 407.25,
+        "width": 40,
+        "height": 40,
+        "top": 407.25,
+        "right": 845.796875,
+        "bottom": 447.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_8_d_y_e31d8dac2e.png?h=ijewel3d.com",
+      "alt": "SH 8Diamonds",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 407.25,
+        "width": 40,
+        "height": 40,
+        "top": 407.25,
+        "right": 899.796875,
+        "bottom": 447.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_8_d_y_e31d8dac2e.png?h=ijewel3d.com",
+      "alt": "SH 8Diamonds",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 913.796875,
+        "y": 407.25,
+        "width": 40,
+        "height": 40,
+        "top": 407.25,
+        "right": 953.796875,
+        "bottom": 447.25,
+        "left": 913.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_ch_2_y_dcd0fd0692.png?h=ijewel3d.com",
+      "alt": "SH Channel 1",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 461.25,
+        "width": 40,
+        "height": 40,
+        "top": 461.25,
+        "right": 791.796875,
+        "bottom": 501.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_ch_2_y_dcd0fd0692.png?h=ijewel3d.com",
+      "alt": "SH Channel 1",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 461.25,
+        "width": 40,
+        "height": 40,
+        "top": 461.25,
+        "right": 845.796875,
+        "bottom": 501.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_f_2_y_c176961344.png?h=ijewel3d.com",
+      "alt": "SH FrenchPave 1",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 461.25,
+        "width": 40,
+        "height": 40,
+        "top": 461.25,
+        "right": 899.796875,
+        "bottom": 501.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_f_2_y_c176961344.png?h=ijewel3d.com",
+      "alt": "SH FrenchPave 1",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 913.796875,
+        "y": 461.25,
+        "width": 40,
+        "height": 40,
+        "top": 461.25,
+        "right": 953.796875,
+        "bottom": 501.25,
+        "left": 913.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pv_1_y_96c888c667.png?h=ijewel3d.com",
+      "alt": "SH Pave 1",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 515.25,
+        "width": 40,
+        "height": 40,
+        "top": 515.25,
+        "right": 791.796875,
+        "bottom": 555.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pv_2_y_2aca262a9f.png?h=ijewel3d.com",
+      "alt": "SH Pave 2",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 515.25,
+        "width": 40,
+        "height": 40,
+        "top": 515.25,
+        "right": 845.796875,
+        "bottom": 555.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pv_2_y_2aca262a9f.png?h=ijewel3d.com",
+      "alt": "SH Pave 2",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 515.25,
+        "width": 40,
+        "height": 40,
+        "top": 515.25,
+        "right": 899.796875,
+        "bottom": 555.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pv_3_y_8fc25a4c76.png?h=ijewel3d.com",
+      "alt": "SH Pave 3",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 913.796875,
+        "y": 515.25,
+        "width": 40,
+        "height": 40,
+        "top": 515.25,
+        "right": 953.796875,
+        "bottom": 555.25,
+        "left": 913.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pv_3_y_8fc25a4c76.png?h=ijewel3d.com",
+      "alt": "SH Pave 3",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 569.25,
+        "width": 40,
+        "height": 40,
+        "top": 569.25,
+        "right": 791.796875,
+        "bottom": 609.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pv_4_y_3e82c9bd70.png?h=ijewel3d.com",
+      "alt": "SH Pave 4",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 569.25,
+        "width": 40,
+        "height": 40,
+        "top": 569.25,
+        "right": 845.796875,
+        "bottom": 609.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pv_4_y_3e82c9bd70.png?h=ijewel3d.com",
+      "alt": "SH Pave 4",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 569.25,
+        "width": 40,
+        "height": 40,
+        "top": 569.25,
+        "right": 899.796875,
+        "bottom": 609.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pl_2_y_2328ce72e7.png?h=ijewel3d.com",
+      "alt": "SH Plain 2",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 913.796875,
+        "y": 569.25,
+        "width": 40,
+        "height": 40,
+        "top": 569.25,
+        "right": 953.796875,
+        "bottom": 609.25,
+        "left": 913.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pl_2_y_2328ce72e7.png?h=ijewel3d.com",
+      "alt": "SH Plain 2",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 623.25,
+        "width": 40,
+        "height": 40,
+        "top": 623.25,
+        "right": 791.796875,
+        "bottom": 663.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pl_3_y_768b9ea224.png?h=ijewel3d.com",
+      "alt": "SH Plain 3",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 623.25,
+        "width": 40,
+        "height": 40,
+        "top": 623.25,
+        "right": 845.796875,
+        "bottom": 663.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pl_3_y_768b9ea224.png?h=ijewel3d.com",
+      "alt": "SH Plain 3",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 623.25,
+        "width": 40,
+        "height": 40,
+        "top": 623.25,
+        "right": 899.796875,
+        "bottom": 663.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pl_4_y_965a228dc1.png?h=ijewel3d.com",
+      "alt": "SH Plain 4",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 913.796875,
+        "y": 623.25,
+        "width": 40,
+        "height": 40,
+        "top": 623.25,
+        "right": 953.796875,
+        "bottom": 663.25,
+        "left": 913.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pl_4_y_965a228dc1.png?h=ijewel3d.com",
+      "alt": "SH Plain 4",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 677.25,
+        "width": 40,
+        "height": 40,
+        "top": 677.25,
+        "right": 791.796875,
+        "bottom": 717.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pl_5_y_2db5949b30.png?h=ijewel3d.com",
+      "alt": "SH Plain 5",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 677.25,
+        "width": 40,
+        "height": 40,
+        "top": 677.25,
+        "right": 845.796875,
+        "bottom": 717.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pl_5_y_2db5949b30.png?h=ijewel3d.com",
+      "alt": "SH Plain 5",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 677.25,
+        "width": 40,
+        "height": 40,
+        "top": 677.25,
+        "right": 899.796875,
+        "bottom": 717.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_pv_1_y_96c888c667.png?h=ijewel3d.com",
+      "alt": "SH PV 1",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 913.796875,
+        "y": 677.25,
+        "width": 40,
+        "height": 40,
+        "top": 677.25,
+        "right": 953.796875,
+        "bottom": 717.25,
+        "left": 913.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_u_2_y_f54e4d2a78.png?h=ijewel3d.com",
+      "alt": "SH UPave 1",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 731.25,
+        "width": 40,
+        "height": 40,
+        "top": 731.25,
+        "right": 791.796875,
+        "bottom": 771.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://drive-weur-1.ijewel3d.com/files/sh_u_2_y_f54e4d2a78.png?h=ijewel3d.com",
+      "alt": "SH UPave 1",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 731.25,
+        "width": 40,
+        "height": 40,
+        "top": 731.25,
+        "right": 845.796875,
+        "bottom": 771.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/metals/yellow-gold.png",
+      "alt": "Yellow Gold",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 834.25,
+        "width": 40,
+        "height": 40,
+        "top": 834.25,
+        "right": 791.796875,
+        "bottom": 874.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/metals/white-gold.png",
+      "alt": "White Gold",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 834.25,
+        "width": 40,
+        "height": 40,
+        "top": 834.25,
+        "right": 845.796875,
+        "bottom": 874.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/metals/rose-gold.png",
+      "alt": "Rose Gold",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 834.25,
+        "width": 40,
+        "height": 40,
+        "top": 834.25,
+        "right": 899.796875,
+        "bottom": 874.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/shapes/cushion.svg",
+      "alt": "Cushion",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 937.25,
+        "width": 40,
+        "height": 40,
+        "top": 937.25,
+        "right": 791.796875,
+        "bottom": 977.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/shapes/emerald.svg",
+      "alt": "Emerald",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 937.25,
+        "width": 40,
+        "height": 40,
+        "top": 937.25,
+        "right": 845.796875,
+        "bottom": 977.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/shapes/oval.svg",
+      "alt": "Oval",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 937.25,
+        "width": 40,
+        "height": 40,
+        "top": 937.25,
+        "right": 899.796875,
+        "bottom": 977.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/shapes/pear.svg",
+      "alt": "Pear",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 913.796875,
+        "y": 937.25,
+        "width": 40,
+        "height": 40,
+        "top": 937.25,
+        "right": 953.796875,
+        "bottom": 977.25,
+        "left": 913.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/shapes/round.svg",
+      "alt": "Round",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 991.25,
+        "width": 40,
+        "height": 40,
+        "top": 991.25,
+        "right": 791.796875,
+        "bottom": 1031.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/head_style/halo.svg",
+      "alt": "Halo",
+      "className": "w-full h-full object-contain transition-transform duration-300 p-0.5",
+      "rect": {
+        "x": 751.796875,
+        "y": 1094.25,
+        "width": 40,
+        "height": 40,
+        "top": 1094.25,
+        "right": 791.796875,
+        "bottom": 1134.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/head_style/hidden_halo.svg",
+      "alt": "Hidden Halo",
+      "className": "w-full h-full object-contain transition-transform duration-300 p-0.5",
+      "rect": {
+        "x": 805.796875,
+        "y": 1094.25,
+        "width": 40,
+        "height": 40,
+        "top": 1094.25,
+        "right": 845.796875,
+        "bottom": 1134.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/head_style/secret_hidden_halo.svg",
+      "alt": "Secret Hidden Halo",
+      "className": "w-full h-full object-contain transition-transform duration-300 p-0.5",
+      "rect": {
+        "x": 859.796875,
+        "y": 1094.25,
+        "width": 40,
+        "height": 40,
+        "top": 1094.25,
+        "right": 899.796875,
+        "bottom": 1134.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/head_style/4_prongs.svg",
+      "alt": "4 Prongs",
+      "className": "w-full h-full object-contain transition-transform duration-300 p-0.5",
+      "rect": {
+        "x": 913.796875,
+        "y": 1094.25,
+        "width": 40,
+        "height": 40,
+        "top": 1094.25,
+        "right": 953.796875,
+        "bottom": 1134.25,
+        "left": 913.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/head_style/6_prongs.svg",
+      "alt": "6 Prongs",
+      "className": "w-full h-full object-contain transition-transform duration-300 p-0.5",
+      "rect": {
+        "x": 751.796875,
+        "y": 1148.25,
+        "width": 40,
+        "height": 40,
+        "top": 1148.25,
+        "right": 791.796875,
+        "bottom": 1188.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/head_style/secret_bazel.svg",
+      "alt": "Secret Bazel",
+      "className": "w-full h-full object-contain transition-transform duration-300 p-0.5",
+      "rect": {
+        "x": 805.796875,
+        "y": 1148.25,
+        "width": 40,
+        "height": 40,
+        "top": 1148.25,
+        "right": 845.796875,
+        "bottom": 1188.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/head_style/tulip.svg",
+      "alt": "Tulip",
+      "className": "w-full h-full object-contain transition-transform duration-300 p-0.5",
+      "rect": {
+        "x": 859.796875,
+        "y": 1148.25,
+        "width": 40,
+        "height": 40,
+        "top": 1148.25,
+        "right": 899.796875,
+        "bottom": 1188.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/diamond.svg",
+      "alt": "Diamond",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 1251.25,
+        "width": 40,
+        "height": 40,
+        "top": 1251.25,
+        "right": 791.796875,
+        "bottom": 1291.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/blue_sapphire.svg",
+      "alt": "Blue Sapphire",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 1251.25,
+        "width": 40,
+        "height": 40,
+        "top": 1251.25,
+        "right": 845.796875,
+        "bottom": 1291.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/ruby.svg",
+      "alt": "Ruby",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 1251.25,
+        "width": 40,
+        "height": 40,
+        "top": 1251.25,
+        "right": 899.796875,
+        "bottom": 1291.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/emerald.svg",
+      "alt": "Emerald",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 913.796875,
+        "y": 1251.25,
+        "width": 40,
+        "height": 40,
+        "top": 1251.25,
+        "right": 953.796875,
+        "bottom": 1291.25,
+        "left": 913.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/aquamarine.svg",
+      "alt": "Aquamarine",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 1305.25,
+        "width": 40,
+        "height": 40,
+        "top": 1305.25,
+        "right": 791.796875,
+        "bottom": 1345.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/pink_diamond.svg",
+      "alt": "Pink Diamond",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 1305.25,
+        "width": 40,
+        "height": 40,
+        "top": 1305.25,
+        "right": 845.796875,
+        "bottom": 1345.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/yellow_sapphire.svg",
+      "alt": "Yellow Sapphire",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 1305.25,
+        "width": 40,
+        "height": 40,
+        "top": 1305.25,
+        "right": 899.796875,
+        "bottom": 1345.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/diamond.svg",
+      "alt": "Diamond",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 1408.25,
+        "width": 40,
+        "height": 40,
+        "top": 1408.25,
+        "right": 791.796875,
+        "bottom": 1448.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/blue_sapphire.svg",
+      "alt": "Blue Sapphire",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 1408.25,
+        "width": 40,
+        "height": 40,
+        "top": 1408.25,
+        "right": 845.796875,
+        "bottom": 1448.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/ruby.svg",
+      "alt": "Ruby",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 1408.25,
+        "width": 40,
+        "height": 40,
+        "top": 1408.25,
+        "right": 899.796875,
+        "bottom": 1448.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/emerald.svg",
+      "alt": "Emerald",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 913.796875,
+        "y": 1408.25,
+        "width": 40,
+        "height": 40,
+        "top": 1408.25,
+        "right": 953.796875,
+        "bottom": 1448.25,
+        "left": 913.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/aquamarine.svg",
+      "alt": "Aquamarine",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 1462.25,
+        "width": 40,
+        "height": 40,
+        "top": 1462.25,
+        "right": 791.796875,
+        "bottom": 1502.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/pink_diamond.svg",
+      "alt": "Pink Diamond",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 1462.25,
+        "width": 40,
+        "height": 40,
+        "top": 1462.25,
+        "right": 845.796875,
+        "bottom": 1502.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/gemstones/yellow_sapphire.svg",
+      "alt": "Yellow Sapphire",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 1462.25,
+        "width": 40,
+        "height": 40,
+        "top": 1462.25,
+        "right": 899.796875,
+        "bottom": 1502.25,
+        "left": 859.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/carats/0.5.svg",
+      "alt": "0.50 ct",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 751.796875,
+        "y": 1565.25,
+        "width": 40,
+        "height": 40,
+        "top": 1565.25,
+        "right": 791.796875,
+        "bottom": 1605.25,
+        "left": 751.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/carats/1.svg",
+      "alt": "1.00 ct",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 805.796875,
+        "y": 1565.25,
+        "width": 40,
+        "height": 40,
+        "top": 1565.25,
+        "right": 845.796875,
+        "bottom": 1605.25,
+        "left": 805.796875
+      }
+    },
+    {
+      "type": "img",
+      "src": "https://alloyum.com/icons/carats/2.svg",
+      "alt": "2.00 ct",
+      "className": "w-full h-full object-contain transition-transform duration-300 ",
+      "rect": {
+        "x": 859.796875,
+        "y": 1565.25,
+        "width": 40,
+        "height": 40,
+        "top": 1565.25,
+        "right": 899.796875,
+        "bottom": 1605.25,
+        "left": 859.796875
+      }
+    }
+  ],
+  "svgs": [
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7\"></path>",
+      "outerHTML": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7\"></path></svg>",
+      "className": null,
+      "width": "20",
+      "height": "20",
+      "parentClass": "w-10 h-10 flex items-center justify-center rounded-lg bg-white/80 backdrop-blur-sm border border-gray-200/50 text-gray-700 hover:text-gray-900 hover:bg-white hover:shadow-md transition-all duration-300"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "\n    <defs>\n        <path id=\"A\" d=\"M.001.232h24.997V36H.001z\"></path>\n    </defs>\n    <g transform=\"translate(-11 -4)\" fill=\"none\" fill-rule=\"evenodd\">\n        <path fill-opacity=\"0\" fill=\"#fff\" d=\"M0 0h44v44H0z\"></path>\n        <g transform=\"translate(11 3)\">\n            <path d=\"M8.733 11.165c.04-1.108.766-2.027 1.743-2.307a2.54 2.54 0 0 1 .628-.089c.16 0 .314.017.463.044 1.088.2 1.9 1.092 1.9 2.16v8.88h1.26c2.943-1.39 5-4.45 5-8.025a9.01 9.01 0 0 0-1.9-5.56l-.43-.5c-.765-.838-1.683-1.522-2.712-2-1.057-.49-2.226-.77-3.46-.77s-2.4.278-3.46.77c-1.03.478-1.947 1.162-2.71 2l-.43.5a9.01 9.01 0 0 0-1.9 5.56 9.04 9.04 0 0 0 .094 1.305c.03.21.088.41.13.617l.136.624c.083.286.196.56.305.832l.124.333a8.78 8.78 0 0 0 .509.953l.065.122a8.69 8.69 0 0 0 3.521 3.191l1.11.537v-9.178z\" fill-opacity=\".5\" fill=\"#e4e4e4\"></path>\n            <path d=\"M22.94 26.218l-2.76 7.74c-.172.485-.676.8-1.253.8H12.24c-1.606 0-3.092-.68-3.98-1.82-1.592-2.048-3.647-3.822-6.11-5.27-.095-.055-.15-.137-.152-.23-.004-.1.046-.196.193-.297.56-.393 1.234-.6 1.926-.6a3.43 3.43 0 0 1 .691.069l4.922.994V10.972c0-.663.615-1.203 1.37-1.203s1.373.54 1.373 1.203v9.882h2.953c.273 0 .533.073.757.21l6.257 3.874c.027.017.045.042.07.06.41.296.586.77.426 1.22M4.1 16.614c-.024-.04-.042-.083-.065-.122a8.69 8.69 0 0 1-.509-.953c-.048-.107-.08-.223-.124-.333l-.305-.832c-.058-.202-.09-.416-.136-.624l-.13-.617a9.03 9.03 0 0 1-.094-1.305c0-2.107.714-4.04 1.9-5.56l.43-.5c.764-.84 1.682-1.523 2.71-2 1.058-.49 2.226-.77 3.46-.77s2.402.28 3.46.77c1.03.477 1.947 1.16 2.712 2l.428.5a9 9 0 0 1 1.901 5.559c0 3.577-2.056 6.636-5 8.026h-1.26v-8.882c0-1.067-.822-1.96-1.9-2.16-.15-.028-.304-.044-.463-.044-.22 0-.427.037-.628.09-.977.28-1.703 1.198-1.743 2.306v9.178l-1.11-.537C6.18 19.098 4.96 18 4.1 16.614M22.97 24.09l-6.256-3.874c-.102-.063-.218-.098-.33-.144 2.683-1.8 4.354-4.855 4.354-8.243 0-.486-.037-.964-.104-1.43a9.97 9.97 0 0 0-1.57-4.128l-.295-.408-.066-.092a10.05 10.05 0 0 0-.949-1.078c-.342-.334-.708-.643-1.094-.922-1.155-.834-2.492-1.412-3.94-1.65l-.732-.088-.748-.03a9.29 9.29 0 0 0-1.482.119c-1.447.238-2.786.816-3.94 1.65a9.33 9.33 0 0 0-.813.686 9.59 9.59 0 0 0-.845.877l-.385.437-.36.5-.288.468-.418.778-.04.09c-.593 1.28-.93 2.71-.93 4.222 0 3.832 2.182 7.342 5.56 8.938l1.437.68v4.946L5 25.64a4.44 4.44 0 0 0-.888-.086c-.017 0-.034.003-.05.003-.252.004-.503.033-.75.08a5.08 5.08 0 0 0-.237.056c-.193.046-.382.107-.568.18-.075.03-.15.057-.225.1-.25.114-.494.244-.723.405a1.31 1.31 0 0 0-.566 1.122 1.28 1.28 0 0 0 .645 1.051C4 29.925 5.96 31.614 7.473 33.563a5.06 5.06 0 0 0 .434.491c1.086 1.082 2.656 1.713 4.326 1.715h6.697c.748-.001 1.43-.333 1.858-.872.142-.18.256-.38.336-.602l2.757-7.74c.094-.26.13-.53.112-.794s-.088-.52-.203-.76a2.19 2.19 0 0 0-.821-.91\" fill-opacity=\".6\" fill=\"#000\"></path>\n            <path d=\"M22.444 24.94l-6.257-3.874a1.45 1.45 0 0 0-.757-.211h-2.953v-9.88c0-.663-.616-1.203-1.373-1.203s-1.37.54-1.37 1.203v16.643l-4.922-.994a3.44 3.44 0 0 0-.692-.069 3.35 3.35 0 0 0-1.925.598c-.147.102-.198.198-.194.298.004.094.058.176.153.23 2.462 1.448 4.517 3.22 6.11 5.27.887 1.14 2.373 1.82 3.98 1.82h6.686c.577 0 1.08-.326 1.253-.8l2.76-7.74c.16-.448-.017-.923-.426-1.22-.025-.02-.043-.043-.07-.06z\" fill=\"#fff\"></path>\n            <g transform=\"translate(0 .769)\">\n                <mask id=\"B\" fill=\"#fff\">\n                    <use xlink:href=\"#A\"></use>\n                </mask>\n                <path d=\"M23.993 24.992a1.96 1.96 0 0 1-.111.794l-2.758 7.74c-.08.22-.194.423-.336.602-.427.54-1.11.87-1.857.872h-6.698c-1.67-.002-3.24-.633-4.326-1.715-.154-.154-.3-.318-.434-.49C5.96 30.846 4 29.157 1.646 27.773c-.385-.225-.626-.618-.645-1.05a1.31 1.31 0 0 1 .566-1.122 4.56 4.56 0 0 1 .723-.405l.225-.1a4.3 4.3 0 0 1 .568-.18l.237-.056c.248-.046.5-.075.75-.08.018 0 .034-.003.05-.003.303-.001.597.027.89.086l3.722.752V20.68l-1.436-.68c-3.377-1.596-5.56-5.106-5.56-8.938 0-1.51.336-2.94.93-4.222.015-.03.025-.06.04-.09.127-.267.268-.525.418-.778.093-.16.186-.316.288-.468.063-.095.133-.186.2-.277L3.773 5c.118-.155.26-.29.385-.437.266-.3.544-.604.845-.877a9.33 9.33 0 0 1 .813-.686C6.97 2.167 8.31 1.59 9.757 1.35a9.27 9.27 0 0 1 1.481-.119 8.82 8.82 0 0 1 .748.031c.247.02.49.05.733.088 1.448.238 2.786.816 3.94 1.65.387.28.752.588 1.094.922a9.94 9.94 0 0 1 .949 1.078l.066.092c.102.133.203.268.295.408a9.97 9.97 0 0 1 1.571 4.128c.066.467.103.945.103 1.43 0 3.388-1.67 6.453-4.353 8.243.11.046.227.08.33.144l6.256 3.874c.37.23.645.55.82.9.115.24.185.498.203.76m.697-1.195c-.265-.55-.677-1.007-1.194-1.326l-5.323-3.297c2.255-2.037 3.564-4.97 3.564-8.114 0-2.19-.637-4.304-1.84-6.114-.126-.188-.26-.37-.4-.552-.645-.848-1.402-1.6-2.252-2.204C15.472.91 13.393.232 11.238.232A10.21 10.21 0 0 0 5.23 2.19c-.848.614-1.606 1.356-2.253 2.205-.136.18-.272.363-.398.55C1.374 6.756.737 8.87.737 11.06c0 4.218 2.407 8.08 6.133 9.842l.863.41v3.092l-2.525-.51c-.356-.07-.717-.106-1.076-.106a5.45 5.45 0 0 0-3.14.996c-.653.46-1.022 1.202-.99 1.983a2.28 2.28 0 0 0 1.138 1.872c2.24 1.318 4.106 2.923 5.543 4.772 1.26 1.62 3.333 2.59 5.55 2.592h6.698c1.42-.001 2.68-.86 3.134-2.138l2.76-7.74c.272-.757.224-1.584-.134-2.325\" fill-opacity=\".05\" fill=\"#000\" mask=\"url(#B)\"></path>\n            </g>\n        </g>\n    </g>\n",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"transform: translate(-50%, -25%);\" width=\"25\" height=\"36\">\n    <defs>\n        <path id=\"A\" d=\"M.001.232h24.997V36H.001z\"></path>\n    </defs>\n    <g transform=\"translate(-11 -4)\" fill=\"none\" fill-rule=\"evenodd\">\n        <path fill-opacity=\"0\" fill=\"#fff\" d=\"M0 0h44v44H0z\"></path>\n        <g transform=\"translate(11 3)\">\n            <path d=\"M8.733 11.165c.04-1.108.766-2.027 1.743-2.307a2.54 2.54 0 0 1 .628-.089c.16 0 .314.017.463.044 1.088.2 1.9 1.092 1.9 2.16v8.88h1.26c2.943-1.39 5-4.45 5-8.025a9.01 9.01 0 0 0-1.9-5.56l-.43-.5c-.765-.838-1.683-1.522-2.712-2-1.057-.49-2.226-.77-3.46-.77s-2.4.278-3.46.77c-1.03.478-1.947 1.162-2.71 2l-.43.5a9.01 9.01 0 0 0-1.9 5.56 9.04 9.04 0 0 0 .094 1.305c.03.21.088.41.13.617l.136.624c.083.286.196.56.305.832l.124.333a8.78 8.78 0 0 0 .509.953l.065.122a8.69 8.69 0 0 0 3.521 3.191l1.11.537v-9.178z\" fill-opacity=\".5\" fill=\"#e4e4e4\"></path>\n            <path d=\"M22.94 26.218l-2.76 7.74c-.172.485-.676.8-1.253.8H12.24c-1.606 0-3.092-.68-3.98-1.82-1.592-2.048-3.647-3.822-6.11-5.27-.095-.055-.15-.137-.152-.23-.004-.1.046-.196.193-.297.56-.393 1.234-.6 1.926-.6a3.43 3.43 0 0 1 .691.069l4.922.994V10.972c0-.663.615-1.203 1.37-1.203s1.373.54 1.373 1.203v9.882h2.953c.273 0 .533.073.757.21l6.257 3.874c.027.017.045.042.07.06.41.296.586.77.426 1.22M4.1 16.614c-.024-.04-.042-.083-.065-.122a8.69 8.69 0 0 1-.509-.953c-.048-.107-.08-.223-.124-.333l-.305-.832c-.058-.202-.09-.416-.136-.624l-.13-.617a9.03 9.03 0 0 1-.094-1.305c0-2.107.714-4.04 1.9-5.56l.43-.5c.764-.84 1.682-1.523 2.71-2 1.058-.49 2.226-.77 3.46-.77s2.402.28 3.46.77c1.03.477 1.947 1.16 2.712 2l.428.5a9 9 0 0 1 1.901 5.559c0 3.577-2.056 6.636-5 8.026h-1.26v-8.882c0-1.067-.822-1.96-1.9-2.16-.15-.028-.304-.044-.463-.044-.22 0-.427.037-.628.09-.977.28-1.703 1.198-1.743 2.306v9.178l-1.11-.537C6.18 19.098 4.96 18 4.1 16.614M22.97 24.09l-6.256-3.874c-.102-.063-.218-.098-.33-.144 2.683-1.8 4.354-4.855 4.354-8.243 0-.486-.037-.964-.104-1.43a9.97 9.97 0 0 0-1.57-4.128l-.295-.408-.066-.092a10.05 10.05 0 0 0-.949-1.078c-.342-.334-.708-.643-1.094-.922-1.155-.834-2.492-1.412-3.94-1.65l-.732-.088-.748-.03a9.29 9.29 0 0 0-1.482.119c-1.447.238-2.786.816-3.94 1.65a9.33 9.33 0 0 0-.813.686 9.59 9.59 0 0 0-.845.877l-.385.437-.36.5-.288.468-.418.778-.04.09c-.593 1.28-.93 2.71-.93 4.222 0 3.832 2.182 7.342 5.56 8.938l1.437.68v4.946L5 25.64a4.44 4.44 0 0 0-.888-.086c-.017 0-.034.003-.05.003-.252.004-.503.033-.75.08a5.08 5.08 0 0 0-.237.056c-.193.046-.382.107-.568.18-.075.03-.15.057-.225.1-.25.114-.494.244-.723.405a1.31 1.31 0 0 0-.566 1.122 1.28 1.28 0 0 0 .645 1.051C4 29.925 5.96 31.614 7.473 33.563a5.06 5.06 0 0 0 .434.491c1.086 1.082 2.656 1.713 4.326 1.715h6.697c.748-.001 1.43-.333 1.858-.872.142-.18.256-.38.336-.602l2.757-7.74c.094-.26.13-.53.112-.794s-.088-.52-.203-.76a2.19 2.19 0 0 0-.821-.91\" fill-opacity=\".6\" fill=\"#000\"></path>\n            <path d=\"M22.444 24.94l-6.257-3.874a1.45 1.45 0 0 0-.757-.211h-2.953v-9.88c0-.663-.616-1.203-1.373-1.203s-1.37.54-1.37 1.203v16.643l-4.922-.994a3.44 3.44 0 0 0-.692-.069 3.35 3.35 0 0 0-1.925.598c-.147.102-.198.198-.194.298.004.094.058.176.153.23 2.462 1.448 4.517 3.22 6.11 5.27.887 1.14 2.373 1.82 3.98 1.82h6.686c.577 0 1.08-.326 1.253-.8l2.76-7.74c.16-.448-.017-.923-.426-1.22-.025-.02-.043-.043-.07-.06z\" fill=\"#fff\"></path>\n            <g transform=\"translate(0 .769)\">\n                <mask id=\"B\" fill=\"#fff\">\n                    <use xlink:href=\"#A\"></use>\n                </mask>\n                <path d=\"M23.993 24.992a1.96 1.96 0 0 1-.111.794l-2.758 7.74c-.08.22-.194.423-.336.602-.427.54-1.11.87-1.857.872h-6.698c-1.67-.002-3.24-.633-4.326-1.715-.154-.154-.3-.318-.434-.49C5.96 30.846 4 29.157 1.646 27.773c-.385-.225-.626-.618-.645-1.05a1.31 1.31 0 0 1 .566-1.122 4.56 4.56 0 0 1 .723-.405l.225-.1a4.3 4.3 0 0 1 .568-.18l.237-.056c.248-.046.5-.075.75-.08.018 0 .034-.003.05-.003.303-.001.597.027.89.086l3.722.752V20.68l-1.436-.68c-3.377-1.596-5.56-5.106-5.56-8.938 0-1.51.336-2.94.93-4.222.015-.03.025-.06.04-.09.127-.267.268-.525.418-.778.093-.16.186-.316.288-.468.063-.095.133-.186.2-.277L3.773 5c.118-.155.26-.29.385-.437.266-.3.544-.604.845-.877a9.33 9.33 0 0 1 .813-.686C6.97 2.167 8.31 1.59 9.757 1.35a9.27 9.27 0 0 1 1.481-.119 8.82 8.82 0 0 1 .748.031c.247.02.49.05.733.088 1.448.238 2.786.816 3.94 1.65.387.28.752.588 1.094.922a9.94 9.94 0 0 1 .949 1.078l.066.092c.102.133.203.268.295.408a9.97 9.97 0 0 1 1.571 4.128c.066.467.103.945.103 1.43 0 3.388-1.67 6.453-4.353 8.243.11.046.227.08.33.144l6.256 3.874c.37.23.645.55.82.9.115.24.185.498.203.76m.697-1.195c-.265-.55-.677-1.007-1.194-1.326l-5.323-3.297c2.255-2.037 3.564-4.97 3.564-8.114 0-2.19-.637-4.304-1.84-6.114-.126-.188-.26-.37-.4-.552-.645-.848-1.402-1.6-2.252-2.204C15.472.91 13.393.232 11.238.232A10.21 10.21 0 0 0 5.23 2.19c-.848.614-1.606 1.356-2.253 2.205-.136.18-.272.363-.398.55C1.374 6.756.737 8.87.737 11.06c0 4.218 2.407 8.08 6.133 9.842l.863.41v3.092l-2.525-.51c-.356-.07-.717-.106-1.076-.106a5.45 5.45 0 0 0-3.14.996c-.653.46-1.022 1.202-.99 1.983a2.28 2.28 0 0 0 1.138 1.872c2.24 1.318 4.106 2.923 5.543 4.772 1.26 1.62 3.333 2.59 5.55 2.592h6.698c1.42-.001 2.68-.86 3.134-2.138l2.76-7.74c.272-.757.224-1.584-.134-2.325\" fill-opacity=\".05\" fill=\"#000\" mask=\"url(#B)\"></path>\n            </g>\n        </g>\n    </g>\n</svg>",
+      "className": null,
+      "width": "25",
+      "height": "36",
+      "parentClass": ""
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M1 1L5 5L9 1\"></path>",
+      "outerHTML": "<svg width=\"10\" height=\"6\" viewBox=\"0 0 10 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"><path d=\"M1 1L5 5L9 1\"></path></svg>",
+      "className": null,
+      "width": "10",
+      "height": "6",
+      "parentClass": "absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none opacity-50"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M1 1L5 5L9 1\"></path>",
+      "outerHTML": "<svg width=\"10\" height=\"6\" viewBox=\"0 0 10 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"><path d=\"M1 1L5 5L9 1\"></path></svg>",
+      "className": null,
+      "width": "10",
+      "height": "6",
+      "parentClass": "absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none opacity-50"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z\"></path>",
+      "outerHTML": "<svg class=\"w-5 h-5\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z\"></path></svg>",
+      "className": "w-5 h-5",
+      "width": 20,
+      "height": 20,
+      "parentClass": "group relative flex items-center justify-center gap-3 w-full h-14  text-white text-[11px] font-bold uppercase tracking-[0.25em] overflow-hidden transition-all duration-500 hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M18 6 6 18\"></path><path d=\"m6 6 12 12\"></path>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-x w-5 h-5\" aria-hidden=\"true\"><path d=\"M18 6 6 18\"></path><path d=\"m6 6 12 12\"></path></svg>",
+      "className": "lucide lucide-x w-5 h-5",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1 hover:bg-gray-100 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M9 14 4 9l5-5\"></path><path d=\"M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11\"></path>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-undo2 lucide-undo-2 w-4 h-4\" aria-hidden=\"true\"><path d=\"M9 14 4 9l5-5\"></path><path d=\"M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11\"></path></svg>",
+      "className": "lucide lucide-undo2 lucide-undo-2 w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700 disabled:opacity-40"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"m15 14 5-5-5-5\"></path><path d=\"M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13\"></path>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-redo2 lucide-redo-2 w-4 h-4\" aria-hidden=\"true\"><path d=\"m15 14 5-5-5-5\"></path><path d=\"M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13\"></path></svg>",
+      "className": "lucide lucide-redo2 lucide-redo-2 w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700 disabled:opacity-40"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M6 12h9a4 4 0 0 1 0 8H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h7a4 4 0 0 1 0 8\"></path>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-bold w-4 h-4\" aria-hidden=\"true\"><path d=\"M6 12h9a4 4 0 0 1 0 8H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h7a4 4 0 0 1 0 8\"></path></svg>",
+      "className": "lucide lucide-bold w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<line x1=\"19\" x2=\"10\" y1=\"4\" y2=\"4\"></line><line x1=\"14\" x2=\"5\" y1=\"20\" y2=\"20\"></line><line x1=\"15\" x2=\"9\" y1=\"4\" y2=\"20\"></line>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-italic w-4 h-4\" aria-hidden=\"true\"><line x1=\"19\" x2=\"10\" y1=\"4\" y2=\"4\"></line><line x1=\"14\" x2=\"5\" y1=\"20\" y2=\"20\"></line><line x1=\"15\" x2=\"9\" y1=\"4\" y2=\"20\"></line></svg>",
+      "className": "lucide lucide-italic w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M6 4v6a6 6 0 0 0 12 0V4\"></path><line x1=\"4\" x2=\"20\" y1=\"20\" y2=\"20\"></line>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-underline w-4 h-4\" aria-hidden=\"true\"><path d=\"M6 4v6a6 6 0 0 0 12 0V4\"></path><line x1=\"4\" x2=\"20\" y1=\"20\" y2=\"20\"></line></svg>",
+      "className": "lucide lucide-underline w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M16 4H9a3 3 0 0 0-2.83 4\"></path><path d=\"M14 12a4 4 0 0 1 0 8H6\"></path><line x1=\"4\" x2=\"20\" y1=\"12\" y2=\"12\"></line>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-strikethrough w-4 h-4\" aria-hidden=\"true\"><path d=\"M16 4H9a3 3 0 0 0-2.83 4\"></path><path d=\"M14 12a4 4 0 0 1 0 8H6\"></path><line x1=\"4\" x2=\"20\" y1=\"12\" y2=\"12\"></line></svg>",
+      "className": "lucide lucide-strikethrough w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M4 12h8\"></path><path d=\"M4 18V6\"></path><path d=\"M12 18V6\"></path><path d=\"m17 12 3-2v8\"></path>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heading1 lucide-heading-1 w-4 h-4\" aria-hidden=\"true\"><path d=\"M4 12h8\"></path><path d=\"M4 18V6\"></path><path d=\"M12 18V6\"></path><path d=\"m17 12 3-2v8\"></path></svg>",
+      "className": "lucide lucide-heading1 lucide-heading-1 w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M4 12h8\"></path><path d=\"M4 18V6\"></path><path d=\"M12 18V6\"></path><path d=\"M21 18h-4c0-4 4-3 4-6 0-1.5-2-2.5-4-1\"></path>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heading2 lucide-heading-2 w-4 h-4\" aria-hidden=\"true\"><path d=\"M4 12h8\"></path><path d=\"M4 18V6\"></path><path d=\"M12 18V6\"></path><path d=\"M21 18h-4c0-4 4-3 4-6 0-1.5-2-2.5-4-1\"></path></svg>",
+      "className": "lucide lucide-heading2 lucide-heading-2 w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M4 12h8\"></path><path d=\"M4 18V6\"></path><path d=\"M12 18V6\"></path><path d=\"M17.5 10.5c1.7-1 3.5 0 3.5 1.5a2 2 0 0 1-2 2\"></path><path d=\"M17 17.5c2 1.5 4 .3 4-1.5a2 2 0 0 0-2-2\"></path>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heading3 lucide-heading-3 w-4 h-4\" aria-hidden=\"true\"><path d=\"M4 12h8\"></path><path d=\"M4 18V6\"></path><path d=\"M12 18V6\"></path><path d=\"M17.5 10.5c1.7-1 3.5 0 3.5 1.5a2 2 0 0 1-2 2\"></path><path d=\"M17 17.5c2 1.5 4 .3 4-1.5a2 2 0 0 0-2-2\"></path></svg>",
+      "className": "lucide lucide-heading3 lucide-heading-3 w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M3 5h.01\"></path><path d=\"M3 12h.01\"></path><path d=\"M3 19h.01\"></path><path d=\"M8 5h13\"></path><path d=\"M8 12h13\"></path><path d=\"M8 19h13\"></path>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-list w-4 h-4\" aria-hidden=\"true\"><path d=\"M3 5h.01\"></path><path d=\"M3 12h.01\"></path><path d=\"M3 19h.01\"></path><path d=\"M8 5h13\"></path><path d=\"M8 12h13\"></path><path d=\"M8 19h13\"></path></svg>",
+      "className": "lucide lucide-list w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700"
+    },
+    {
+      "type": "svg",
+      "innerHTML": "<path d=\"M11 5h10\"></path><path d=\"M11 12h10\"></path><path d=\"M11 19h10\"></path><path d=\"M4 4h1v5\"></path><path d=\"M4 9h2\"></path><path d=\"M6.5 20H3.4c0-1 2.6-1.925 2.6-3.5a1.5 1.5 0 0 0-2.6-1.02\"></path>",
+      "outerHTML": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-list-ordered w-4 h-4\" aria-hidden=\"true\"><path d=\"M11 5h10\"></path><path d=\"M11 12h10\"></path><path d=\"M11 19h10\"></path><path d=\"M4 4h1v5\"></path><path d=\"M4 9h2\"></path><path d=\"M6.5 20H3.4c0-1 2.6-1.925 2.6-3.5a1.5 1.5 0 0 0-2.6-1.02\"></path></svg>",
+      "className": "lucide lucide-list-ordered w-4 h-4",
+      "width": "24",
+      "height": "24",
+      "parentClass": "p-1.5 rounded flex-shrink-0 transition-colors hover:bg-gray-200 text-gray-700"
+    }
+  ],
+  "cssVars": {
+    "--container-md": "28rem",
+    "--tw-inset-shadow-alpha": "100%",
+    "--color-amber-400": "oklch(82.8% .189 84.429)",
+    "--tw-ring-shadow": "0 0 #0000",
+    "--text-2xl": "1.5rem",
+    "--color-purple-500": "oklch(62.7% .265 303.9)",
+    "--tw-drop-shadow-alpha": "100%",
+    "--shadow-md": "0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a",
+    "--color-red-900": "oklch(39.6% .141 25.723)",
+    "--text-lg": "1.125rem",
+    "--color-teal-400": "oklch(77.7% .152 181.912)",
+    "--color-blue-700": "oklch(48.8% .243 264.376)",
+    "--color-amber-600": "oklch(66.6% .179 58.318)",
+    "--tw-outline-style": "solid",
+    "--text-5xl--line-height": "1",
+    "--color-green-100": "oklch(96.2% .044 156.743)",
+    "--tw-inset-ring-shadow": "0 0 #0000",
+    "--color-emerald-700": "oklch(50.8% .118 165.612)",
+    "--text-base--line-height": "1.5",
+    "--color-red-200": "oklch(88.5% .062 18.334)",
+    "--color-blue-300": "oklch(80.9% .105 251.813)",
+    "--color-gray-300": "oklch(87.2% .01 258.338)",
+    "--color-yellow-400": "oklch(85.2% .199 91.936)",
+    "--font-mono": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
+    "--tracking-wider": ".05em",
+    "--color-amber-300": "oklch(87.9% .169 91.605)",
+    "--color-gray-500": "oklch(55.1% .027 264.364)",
+    "--color-green-500": "oklch(72.3% .219 149.579)",
+    "--color-gray-50": "oklch(98.5% .002 247.839)",
+    "--tw-inset-shadow": "0 0 #0000",
+    "--tw-ring-offset-color": "#fff",
+    "--text-lg--line-height": "calc(1.75/1.125)",
+    "--color-red-400": "oklch(70.4% .191 22.216)",
+    "--tw-gradient-from": "rgba(0, 0, 0, 0)",
+    "--color-white": "#fff",
+    "--color-gray-400": "oklch(70.7% .022 261.325)",
+    "--color-blue-400": "oklch(70.7% .165 254.624)",
+    "--tw-shadow-alpha": "100%",
+    "--tw-gradient-to": "rgba(0, 0, 0, 0)",
+    "--radius-sm": ".25rem",
+    "--shadow-sm": "0 1px 3px 0 #0000001a,0 1px 2px -1px #0000001a",
+    "--font-sans": "ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
+    "--tw-scale-z": "1",
+    "--font-weight-bold": "700",
+    "--shadow-lg": "0 10px 15px -3px #0000001a,0 4px 6px -4px #0000001a",
+    "--color-gray-100": "oklch(96.7% .003 264.542)",
+    "--color-red-800": "oklch(44.4% .177 26.899)",
+    "--color-red-500": "oklch(63.7% .237 25.331)",
+    "--container-sm": "24rem",
+    "--tw-ring-offset-width": "0px",
+    "--tw-gradient-via-position": "50%",
+    "--text-6xl": "3.75rem",
+    "--text-xs--line-height": "calc(1/.75)",
+    "--default-font-family": "ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
+    "--tw-space-x-reverse": "0",
+    "--container-lg": "32rem",
+    "--color-amber-800": "oklch(47.3% .137 46.201)",
+    "--tw-gradient-to-position": "100%",
+    "--default-transition-duration": ".15s",
+    "--color-green-900": "oklch(39.3% .095 152.535)",
+    "--animate-pulse": "pulse 2s cubic-bezier(.4,0,.6,1)infinite",
+    "--radius-2xl": "1rem",
+    "--radius-md": ".375rem",
+    "--drop-shadow-lg": "0 4px 4px #00000026",
+    "--color-blue-800": "oklch(42.4% .199 265.638)",
+    "--radius-lg": ".5rem",
+    "--text-xl": "1.25rem",
+    "--container-xs": "20rem",
+    "--tw-gradient-from-position": "0%",
+    "--ease-in-out": "cubic-bezier(.4,0,.2,1)",
+    "--tw-ring-offset-shadow": "0 0 #0000",
+    "--color-blue-100": "oklch(93.2% .032 255.585)",
+    "--color-green-600": "oklch(62.7% .194 149.214)",
+    "--color-gray-800": "oklch(27.8% .033 256.848)",
+    "--leading-relaxed": "1.625",
+    "--drop-shadow-md": "0 3px 3px #0000001f",
+    "--tracking-tighter": "-.05em",
+    "--font-weight-black": "900",
+    "--default-transition-timing-function": "cubic-bezier(.4,0,.2,1)",
+    "--color-green-50": "oklch(98.2% .018 155.826)",
+    "--color-red-300": "oklch(80.8% .114 19.571)",
+    "--radius-3xl": "1.5rem",
+    "--color-emerald-900": "oklch(37.8% .077 168.94)",
+    "--text-2xl--line-height": "calc(2/1.5)",
+    "--container-5xl": "64rem",
+    "--color-amber-500": "oklch(76.9% .188 70.08)",
+    "--spacing": ".25rem",
+    "--tw-translate-z": "0",
+    "--tw-gradient-via": "rgba(0, 0, 0, 0)",
+    "--color-rose-300": "oklch(81% .117 11.638)",
+    "--tw-scale-y": "1",
+    "--container-6xl": "72rem",
+    "--tracking-wide": ".025em",
+    "--text-xl--line-height": "calc(1.75/1.25)",
+    "--color-green-800": "oklch(44.8% .119 151.328)",
+    "--font-weight-semibold": "600",
+    "--container-3xl": "48rem",
+    "--color-red-700": "oklch(50.5% .213 27.518)",
+    "--text-sm": ".875rem",
+    "--color-green-400": "oklch(79.2% .209 151.711)",
+    "--tw-translate-y": "0",
+    "--ease-out": "cubic-bezier(0,0,.2,1)",
+    "--color-emerald-500": "oklch(69.6% .17 162.48)",
+    "--color-blue-500": "oklch(62.3% .214 259.815)",
+    "--color-gray-900": "oklch(21% .034 264.665)",
+    "--animate-spin": "spin 1s linear infinite",
+    "--color-yellow-50": "oklch(98.7% .026 102.212)",
+    "--container-4xl": "56rem",
+    "--color-gray-950": "oklch(13% .028 261.692)",
+    "--color-blue-900": "oklch(37.9% .146 265.522)",
+    "--color-amber-700": "oklch(55.5% .163 48.998)",
+    "--color-amber-900": "oklch(41.4% .112 45.904)",
+    "--color-emerald-50": "oklch(97.9% .021 166.113)",
+    "--color-gray-700": "oklch(37.3% .034 259.733)",
+    "--leading-tight": "1.25",
+    "--color-gray-600": "oklch(44.6% .03 256.802)",
+    "--color-purple-400": "oklch(71.4% .203 305.504)",
+    "--color-purple-50": "oklch(97.7% .014 308.299)",
+    "--color-red-100": "oklch(93.6% .032 17.717)",
+    "--color-blue-600": "oklch(54.6% .245 262.881)",
+    "--text-4xl": "2.25rem",
+    "--color-green-200": "oklch(92.5% .084 155.995)",
+    "--tw-divide-y-reverse": "0",
+    "--tw-border-style": "solid",
+    "--color-amber-950": "oklch(27.9% .077 45.635)",
+    "--color-red-600": "oklch(57.7% .245 27.325)",
+    "--color-red-50": "oklch(97.1% .013 17.38)",
+    "--container-2xl": "42rem",
+    "--tw-shadow": "0 0 #0000",
+    "--text-sm--line-height": "calc(1.25/.875)",
+    "--tw-translate-x": "0",
+    "--color-blue-200": "oklch(88.2% .059 254.128)",
+    "--color-blue-50": "oklch(97% .014 254.604)",
+    "--color-gray-200": "oklch(92.8% .006 264.531)",
+    "--color-green-300": "oklch(87.1% .15 154.449)",
+    "--text-3xl--line-height": "1.2",
+    "--text-5xl": "3rem",
+    "--text-3xl": "1.875rem",
+    "--color-black": "#000",
+    "--text-xs": ".75rem",
+    "--tracking-widest": ".1em",
+    "--color-red-950": "oklch(25.8% .092 26.042)",
+    "--font-weight-medium": "500",
+    "--font-weight-normal": "400",
+    "--tw-scale-x": "1",
+    "--color-emerald-400": "oklch(76.5% .177 163.223)",
+    "--color-green-700": "oklch(52.7% .154 150.069)",
+    "--color-amber-100": "oklch(96.2% .059 95.617)",
+    "--color-neutral-800": "oklch(26.9% 0 0)",
+    "--color-teal-500": "oklch(70.4% .14 182.503)",
+    "--radius-xl": ".75rem",
+    "--tw-space-y-reverse": "0",
+    "--text-6xl--line-height": "1",
+    "--text-4xl--line-height": "calc(2.5/2.25)",
+    "--color-amber-50": "oklch(98.7% .022 95.277)",
+    "--container-7xl": "80rem",
+    "--text-base": "1rem",
+    "--blur-sm": "8px",
+    "--color-amber-200": "oklch(92.4% .12 95.746)",
+    "--default-mono-font-family": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
+    "--tracking-tight": "-.025em"
+  }
+}

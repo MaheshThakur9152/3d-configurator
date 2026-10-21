@@ -1,0 +1,18 @@
+[
+  {
+    "id": "",
+    "className": "w-full h-full absolute inset-0 mix-blend-multiply dark:mix-blend-normal",
+    "width": 724,
+    "height": 666,
+    "rect": {
+      "top": 77,
+      "left": 0,
+      "width": 723.796875,
+      "height": 666
+    },
+    "debugInfo": {
+      "vendor": "Google Inc. (NVIDIA)",
+      "renderer": "ANGLE (NVIDIA, NVIDIA GeForce GT 610 (0x0000104A) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+    }
+  }
+]
