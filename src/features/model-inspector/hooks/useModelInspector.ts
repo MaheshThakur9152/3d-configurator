@@ -212,10 +212,35 @@ export function useModelInspector() {
               const nodeName = mesh.name?.toLowerCase() || '';
 
               let role: SemanticMeshRole = 'unassigned';
-              if (matName.includes('gem') || matName.includes('diam') || nodeName.includes('gem') || nodeName.includes('diam')) {
-                role = meshCounter === 1 || triangleCount > 2000 ? 'centerGem' : 'sideGem';
-              } else if (matName.includes('metal') || matName.includes('gold') || nodeName.includes('shank') || nodeName.includes('band')) {
+              const isCenterName =
+                nodeName.includes('diamond_oval') ||
+                nodeName.includes('center') ||
+                nodeName.includes('main') ||
+                nodeName.includes('solitaire') ||
+                matName === 'gem 01';
+
+              if (isCenterName) {
+                role = 'centerGem';
+              } else if (
+                matName.includes('metal') ||
+                matName.includes('gold') ||
+                matName.includes('plat') ||
+                nodeName.includes('shank') ||
+                nodeName.includes('band') ||
+                nodeName.includes('prong') ||
+                nodeName.includes('metal')
+              ) {
                 role = 'metal';
+              } else if (
+                matName.includes('gem') ||
+                matName.includes('diam') ||
+                nodeName.includes('gem') ||
+                nodeName.includes('diam') ||
+                nodeName.includes('pave') ||
+                nodeName.includes('side') ||
+                nodeName.includes('halo')
+              ) {
+                role = 'sideGem';
               }
 
               mesh.userData.role = role;

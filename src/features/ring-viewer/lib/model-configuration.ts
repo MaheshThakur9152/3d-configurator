@@ -21,19 +21,50 @@ export function identifyMeshRole(
 
   const mat = mesh.material as THREE.Material;
   const matName = mat?.name || '';
+  const nodeName = mesh.name || '';
+  const lowerMat = matName.toLowerCase();
+  const lowerNode = nodeName.toLowerCase();
 
   let role: MeshRole = defaultRole;
 
-  if (matName === 'Gem 01' || mesh.name === 'mesh_21') {
+  // 1. Center stone identification
+  // Matches: 'Gem 01', 'Diamond_Oval', explicit center/main tags, or 'mesh_21' in head (non-metal)
+  const isCenterName =
+    lowerNode.includes('diamond_oval') ||
+    lowerNode.includes('center') ||
+    lowerNode.includes('main_gem') ||
+    lowerNode.includes('solitaire');
+
+  const isHeadMesh21 =
+    (nodeName === 'mesh_21' || nodeName === 'Diamond_Oval') &&
+    !lowerMat.includes('metal');
+
+  if (matName === 'Gem 01' || isCenterName || isHeadMesh21) {
     role = 'centerGem';
-  } else if (matName === 'Gem 02' || matName.includes('Gem')) {
-    role = 'sideGem';
-  } else if (
-    matName.includes('Metal') ||
-    matName === 'Metal 01' ||
-    matName === 'Metal 02'
+  }
+  // 2. Metal detection
+  else if (
+    lowerMat.includes('metal') ||
+    lowerMat.includes('gold') ||
+    lowerMat.includes('plat') ||
+    lowerNode.includes('metal') ||
+    lowerNode.includes('shank') ||
+    lowerNode.includes('band') ||
+    lowerNode.includes('prong')
   ) {
     role = 'metal';
+  }
+  // 3. Side / pavé diamond detection
+  else if (
+    matName === 'Gem 02' ||
+    lowerMat.includes('gem') ||
+    lowerMat.includes('diam') ||
+    lowerNode.includes('pave') ||
+    lowerNode.includes('side') ||
+    lowerNode.includes('halo') ||
+    lowerNode.includes('accent')
+  ) {
+    role = 'sideGem';
   }
 
   mesh.userData.role = role;

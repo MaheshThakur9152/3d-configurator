@@ -1,16 +1,14 @@
 import * as THREE from 'three';
 import { GemstoneOption } from '@/features/configurator/types/configurator.types';
+import { createDiamondShaderMaterial } from '@/features/diamond-shader/DiamondShaderMaterial';
 
 /**
  * Creates gemstone materials for the jewelry scene.
  *
  * Diamond Physical Configuration:
- * - Pure optical transmission (90% transmission, 10% reflective facet presence)
- * - True diamond refractive index (n = 2.417)
- * - Three.js native spectral dispersion (0.044) for chromatic fire flashes
- * - Mirror facet polish (roughness: 0.0, clearcoat: 1.0)
- * - Volumetric depth attenuation (thickness: 2.8, attenuationDistance: 10.0)
- * - Studio environment reflection intensity: 5.5
+ * - Clean-room optical diamond shader with multi-bounce Snell refraction,
+ *   Total Internal Reflection (TIR), chromatic dispersion, and facet contrast extinction.
+ * - Pavé side diamonds utilize calibrated non-diffuse PBR with flat facet normals.
  *
  * Colored Gemstones:
  * - Calibrated transmission tint, physical volume absorption, and specific IOR.
@@ -18,52 +16,74 @@ import { GemstoneOption } from '@/features/configurator/types/configurator.types
 export function createGemstoneMaterial(
   gemstone: GemstoneOption,
   isCenterstone: boolean = true,
-  _envMap?: THREE.Texture | null
+  envMap?: THREE.Texture | null
 ): THREE.Material {
   const isDiamond = gemstone.id === 'diamond';
 
   if (isDiamond) {
-    return new THREE.MeshPhysicalMaterial({
+    if (isCenterstone && envMap) {
+      return createDiamondShaderMaterial({
+        envMap,
+        envMapIntensity: 1.4,
+        refractiveIndex: 2.417,
+        dispersion: 0.044,
+        boost: 1.25,
+      });
+    }
+
+    const mat = new THREE.MeshPhysicalMaterial({
       name: isCenterstone ? 'Gem 01' : 'Gem 02',
-      color: new THREE.Color(0xffffff),
-      transmission: isCenterstone ? 0.90 : 0.94,
+      color: new THREE.Color(0x0a0a0a), // Zero diffuse chalk - pure specular & internal refraction
+      transmission: isCenterstone ? 0.78 : 0.22,
       opacity: 1.0,
       transparent: true,
       roughness: 0.0,
       metalness: 0.0,
       ior: 2.417,
       reflectivity: 1.0,
-      envMapIntensity: isCenterstone ? 5.5 : 3.8,
+      envMapIntensity: isCenterstone ? 4.0 : 2.8,
       clearcoat: 1.0,
       clearcoatRoughness: 0.0,
       dispersion: 0.044,
       thickness: isCenterstone ? 2.8 : 1.2,
       attenuationColor: new THREE.Color(0xffffff),
-      attenuationDistance: 10.0,
-      flatShading: false,
+      attenuationDistance: 8.0,
+      flatShading: true, // Guarantees individual, razor-sharp facet reflections
     });
+
+    if (envMap) {
+      mat.envMap = envMap;
+    }
+
+    return mat;
   }
 
   // Colored gemstones (Sapphire, Ruby, Emerald, etc.)
   const gemTint = new THREE.Color(gemstone.transmissionColor);
 
-  return new THREE.MeshPhysicalMaterial({
+  const mat = new THREE.MeshPhysicalMaterial({
     name: isCenterstone ? 'Gem 01' : 'Gem 02',
     color: gemTint,
-    transmission: 0.86,
+    transmission: isCenterstone ? 0.72 : 0.35,
     opacity: 1.0,
     transparent: true,
     roughness: 0.0,
     metalness: 0.0,
     ior: gemstone.ior,
     reflectivity: 1.0,
-    envMapIntensity: isCenterstone ? 4.2 : 3.2,
+    envMapIntensity: isCenterstone ? 3.2 : 2.4,
     clearcoat: 1.0,
     clearcoatRoughness: 0.0,
     dispersion: 0.02,
     thickness: isCenterstone ? 2.5 : 1.0,
     attenuationColor: gemTint,
-    attenuationDistance: 4.0,
-    flatShading: false,
+    attenuationDistance: 3.5,
+    flatShading: true,
   });
+
+  if (envMap) {
+    mat.envMap = envMap;
+  }
+
+  return mat;
 }

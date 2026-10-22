@@ -53,9 +53,9 @@ vec2 dirToEquirectUV(vec3 dir) {
 }
 
 // Samples equirectangular environment texture
-vec3 sampleEnvironment(vec3 dir, float lod) {
+vec3 sampleEnvironment(vec3 dir) {
   vec2 uv = dirToEquirectUV(dir);
-  return textureLod(envMap, uv, lod).rgb * envMapIntensity;
+  return texture2D(envMap, uv).rgb * envMapIntensity;
 }
 
 void main() {
@@ -72,13 +72,13 @@ void main() {
 
   // 2. Exterior Specular Reflection (Glints & Facet Edges)
   vec3 reflectDir = reflect(V, N);
-  vec3 exteriorReflection = sampleEnvironment(reflectDir, 0.0) * 1.5;
+  vec3 exteriorReflection = sampleEnvironment(reflectDir) * 1.5;
 
   // 3. Chromatic Dispersion & Refraction (Wavelength Splitting)
   // Red, Green, Blue experience different IORs (Cauchy equation approximation)
-  float iorR = n2 - dispersion * 0.7;
+  float iorR = n2 - dispersion * 0.8;
   float iorG = n2;
-  float iorB = n2 + dispersion * 0.8;
+  float iorB = n2 + dispersion * 0.9;
 
   vec3 refrR = refract(V, N, n1 / iorR);
   vec3 refrG = refract(V, N, n1 / iorG);
@@ -89,33 +89,53 @@ void main() {
   if (length(refrG) < 0.01) refrG = reflectDir;
   if (length(refrB) < 0.01) refrB = reflectDir;
 
-  // 4. Internal Ray Bounces & Pavilion Reflection
-  // Multi-bounce reflection off interior opposing facets
-  vec3 internalBounceR = reflect(refrR, -N);
-  vec3 internalBounceG = reflect(refrG, -N);
-  vec3 internalBounceB = reflect(refrB, -N);
+  // 4. Multi-Facet Internal Pavilion Reflection (TIR at ~41 degree facets)
+  // Internal rays strike opposing pavilion facets and reflect back up toward the crown
+  vec3 pavN1 = normalize(vec3(0.68, -0.73, 0.0));
+  vec3 pavN2 = normalize(vec3(-0.68, -0.73, 0.0));
+  vec3 pavN3 = normalize(vec3(0.0, -0.73, 0.68));
+  vec3 pavN4 = normalize(vec3(0.0, -0.73, -0.68));
 
-  // Sample internal refractions
-  vec3 colR = sampleEnvironment(refrR, 0.5) * 0.4 + sampleEnvironment(internalBounceR, 0.0) * 0.9;
-  vec3 colG = sampleEnvironment(refrG, 0.5) * 0.4 + sampleEnvironment(internalBounceG, 0.0) * 0.9;
-  vec3 colB = sampleEnvironment(refrB, 0.5) * 0.4 + sampleEnvironment(internalBounceB, 0.0) * 0.9;
+  // Determine primary pavilion bounce normal based on ray quadrant
+  vec3 pN = (refrG.x > 0.0) ? pavN1 : pavN2;
+  if (abs(refrG.z) > abs(refrG.x)) {
+    pN = (refrG.z > 0.0) ? pavN3 : pavN4;
+  }
+
+  vec3 bounceR = reflect(refrR, pN);
+  vec3 bounceG = reflect(refrG, pN);
+  vec3 bounceB = reflect(refrB, pN);
+
+  // Secondary internal bounce off opposite pavilion wall
+  vec3 bounce2R = reflect(bounceR, -pN);
+  vec3 bounce2G = reflect(bounceG, -pN);
+  vec3 bounce2B = reflect(bounceB, -pN);
+
+  // Sample environment along refracted and multi-bounced ray directions (normalized weights)
+  vec3 colR = sampleEnvironment(refrR) * 0.25 + sampleEnvironment(bounceR) * 0.45 + sampleEnvironment(bounce2R) * 0.30;
+  vec3 colG = sampleEnvironment(refrG) * 0.25 + sampleEnvironment(bounceG) * 0.45 + sampleEnvironment(bounce2G) * 0.30;
+  vec3 colB = sampleEnvironment(refrB) * 0.25 + sampleEnvironment(bounceB) * 0.45 + sampleEnvironment(bounce2B) * 0.30;
 
   vec3 internalColor = vec3(colR.r, colG.g, colB.b) * gemColor * boost;
 
-  // 5. Facet Contrast & Extinction
-  // Real diamonds have sharp contrast between bright light-catching facets and dark extinction angles
+  // 5. Facet Scintillation & Contrast
+  // Real diamonds have sharp alternating contrast:
+  // Central table facet reflects viewer shadow / extinction zone (~0.45)
+  // Angled crown and pavilion facets catch the brilliant studio softbox reflections (~1.35)
   float facetFacing = abs(dot(N, vec3(0.0, 1.0, 0.0)));
-  float contrastFactor = mix(facetExtinction, 1.35, pow(facetFacing, 1.2));
+  float contrastFactor = mix(1.25, 0.48, pow(facetFacing, 1.4));
   internalColor *= contrastFactor;
 
   // 6. Combine Specular Exterior with Internal Brilliant Dispersion
-  vec3 finalColor = mix(internalColor, exteriorReflection, fresnel * 0.85);
+  vec3 finalColor = mix(internalColor, exteriorReflection, fresnel * 0.75);
 
-  // Subtle sparkle flash when looking nearly down the facet normal
-  float sparkle = pow(clamp(dot(reflectDir, vec3(0.0, 1.0, 0.0)), 0.0, 1.0), 32.0);
-  finalColor += vec3(sparkle * 2.0);
+  // Scintillation micro-sparkles along facet edges (at studio key angles)
+  float glint = pow(clamp(dot(reflectDir, vec3(0.5, 0.8, -0.3)), 0.0, 1.0), 32.0);
+  finalColor += vec3(glint * 0.8);
 
   gl_FragColor = vec4(finalColor, 1.0);
+  #include <tonemapping_fragment>
+  #include <colorspace_fragment>
 }
 `;
 

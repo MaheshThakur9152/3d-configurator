@@ -5,26 +5,30 @@ import { MetalOption } from '@/features/configurator/types/configurator.types';
  * Calibrated spectral reflectance colors for fine jewelry precious metals.
  * Pure physical conductors (metalness = 1.0) with micro-clearcoat for authentic luster.
  */
-const METAL_CALIBRATION: Record<string, { color: string; roughness: number; clearcoat: number }> = {
+const METAL_CALIBRATION: Record<string, { color: string; roughness: number; clearcoat: number; envMapIntensity: number }> = {
   white_gold: {
-    color: '#e5e7ea', // Rhodium-plated white gold luster
-    roughness: 0.06,
-    clearcoat: 0.20,
+    color: '#dce0e3', // Calibrated rhodium-plated white gold luster matching studio reference
+    roughness: 0.012, // High-gloss mirror polish
+    clearcoat: 0.0,   // Pure conductor surface (zero dielectric varnish)
+    envMapIntensity: 2.8,
   },
   yellow_gold: {
-    color: '#f4ce6a', // Rich, buttery 18k luxury gold
-    roughness: 0.07,
-    clearcoat: 0.15,
+    color: '#ecc068', // Rich, warm 18k yellow luxury gold
+    roughness: 0.02,
+    clearcoat: 0.0,
+    envMapIntensity: 2.6,
   },
   rose_gold: {
-    color: '#e89a82', // Warm copper-gold blush tone
-    roughness: 0.07,
-    clearcoat: 0.15,
+    color: '#e59a85', // Warm copper-pink 18k rose gold blush tone
+    roughness: 0.02,
+    clearcoat: 0.0,
+    envMapIntensity: 2.6,
   },
   platinum: {
-    color: '#d8dadc', // Deep, cool 950 platinum sheen
-    roughness: 0.05,
-    clearcoat: 0.25,
+    color: '#c8cbce', // Deep, cool 950 platinum sheen
+    roughness: 0.01,
+    clearcoat: 0.0,
+    envMapIntensity: 3.0,
   },
 };
 
@@ -35,8 +39,9 @@ const METAL_CALIBRATION: Record<string, { color: string; roughness: number; clea
 export function createMetalMaterial(metal: MetalOption): THREE.MeshPhysicalMaterial {
   const profile = METAL_CALIBRATION[metal.id] || {
     color: metal.colorHex,
-    roughness: metal.roughness,
-    clearcoat: 0.15,
+    roughness: 0.02,
+    clearcoat: 0.0,
+    envMapIntensity: 2.6,
   };
 
   const metalColor = new THREE.Color(profile.color);
@@ -46,8 +51,8 @@ export function createMetalMaterial(metal: MetalOption): THREE.MeshPhysicalMater
     color: metalColor,
     metalness: 1.0,                       // 100% conductor: eliminates plastic haze
     roughness: profile.roughness,         // Mirror polish with subtle micro-roughness
-    clearcoat: profile.clearcoat,         // High-gloss surface finishing
-    clearcoatRoughness: 0.08,
-    envMapIntensity: 2.6,                 // Calibrated studio HDR reflections
+    clearcoat: profile.clearcoat,
+    clearcoatRoughness: 0.0,
+    envMapIntensity: profile.envMapIntensity, // Calibrated studio HDR reflections
   });
 }

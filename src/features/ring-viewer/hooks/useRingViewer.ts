@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, RefObject } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { ConfiguratorState } from '@/features/configurator/types/configurator.types';
-import { setupViewer } from '../lib/viewer-setup';
+import { setupViewer, loadStudioEnvironments } from '../lib/viewer-setup';
 import { loadRingModels, loadEternityModel } from '../lib/model-loader';
 import { syncRingState } from '../lib/model-configuration';
 
@@ -31,6 +31,9 @@ export function useRingViewer(state: ConfiguratorState): UseRingViewerReturn {
   const headMeshGroup = useRef<THREE.Group | null>(null);
   const eternityMeshGroup = useRef<THREE.Group | null>(null);
   const currentEternityUrl = useRef<string>('/assets/models/et_plain_03.glb');
+  const gemEnvMapRef = useRef<THREE.Texture | null>(null);
+  const metalEnvMapRef = useRef<THREE.Texture | null>(null);
+  const rawGemTextureRef = useRef<THREE.Texture | null>(null);
 
   // Request render helper
   const requestRenderRef = useRef<() => void>(() => {});
@@ -57,6 +60,10 @@ export function useRingViewer(state: ConfiguratorState): UseRingViewerReturn {
     controlsRef.current = controls;
     ringGroupRef.current = ringGroup;
     (window as any).__viewerRenderer = renderer;
+    (window as any).__viewerScene = scene;
+    (window as any).__viewerCamera = camera;
+    (window as any).__viewerControls = controls;
+    (window as any).__viewerRingGroup = ringGroup;
 
     let isDisposed = false;
     let renderRequested = true;
@@ -81,13 +88,36 @@ export function useRingViewer(state: ConfiguratorState): UseRingViewerReturn {
         ringGroup.add(headScene);
         ringGroup.add(eternityScene);
 
-        syncRingState(state, shankScene, headScene, eternityScene, scene.environment);
+        syncRingState(state, shankScene, headScene, eternityScene, gemEnvMapRef.current || scene.environment);
         setIsLoading(false);
         triggerRender();
       })
       .catch((err) => {
         console.error('Failed to load ring models:', err);
         setIsLoading(false);
+      });
+
+    // Load authentic studio HDR & EXR environments
+    loadStudioEnvironments(pmremGenerator)
+      .then(({ metalEnvMap, gemEnvMap, rawGemTexture }) => {
+        if (isDisposed) return;
+        scene.environment = metalEnvMap;
+        metalEnvMapRef.current = metalEnvMap;
+        gemEnvMapRef.current = gemEnvMap;
+        rawGemTextureRef.current = rawGemTexture;
+        if (shankMeshGroup.current && headMeshGroup.current) {
+          syncRingState(
+            state,
+            shankMeshGroup.current,
+            headMeshGroup.current,
+            eternityMeshGroup.current,
+            rawGemTexture || gemEnvMap
+          );
+          triggerRender();
+        }
+      })
+      .catch((err) => {
+        console.warn('Failed to load studio HDR environments, keeping procedural fallback:', err);
       });
 
     // Smart render loop: on-demand rendering with damping continuation
@@ -163,7 +193,7 @@ export function useRingViewer(state: ConfiguratorState): UseRingViewerReturn {
           shankMeshGroup.current,
           headMeshGroup.current,
           newEternityScene,
-          sceneRef.current?.environment
+          rawGemTextureRef.current || gemEnvMapRef.current || sceneRef.current?.environment
         );
         requestRenderRef.current();
       })
@@ -177,7 +207,7 @@ export function useRingViewer(state: ConfiguratorState): UseRingViewerReturn {
       shankMeshGroup.current,
       headMeshGroup.current,
       eternityMeshGroup.current,
-      sceneRef.current?.environment
+      rawGemTextureRef.current || gemEnvMapRef.current || sceneRef.current?.environment
     );
     requestRenderRef.current();
   }, [

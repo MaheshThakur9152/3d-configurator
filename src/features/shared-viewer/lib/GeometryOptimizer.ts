@@ -34,7 +34,13 @@ export function optimizeSceneGeometry(
       const role = identifyMeshRole(mesh);
 
       // Do NOT merge centerGem because it scales independently with carat selection
-      if (role !== 'centerGem' && targetRoles.includes(role)) {
+      if (role === 'centerGem') {
+        // Enforce optically pure planar facet normals for diamond scintillation
+        if (mesh.geometry.index) {
+          mesh.geometry = mesh.geometry.toNonIndexed();
+        }
+        mesh.geometry.computeVertexNormals();
+      } else if (targetRoles.includes(role)) {
         const list = meshesByRole.get(role) || [];
         list.push(mesh);
         meshesByRole.set(role, list);

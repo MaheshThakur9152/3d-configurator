@@ -1,5 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
+import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js';
 
 export interface SetupViewerResult {
   scene: THREE.Scene;
@@ -8,6 +10,36 @@ export interface SetupViewerResult {
   controls: OrbitControls;
   ringGroup: THREE.Group;
   pmremGenerator: THREE.PMREMGenerator;
+}
+
+export interface StudioEnvironments {
+  metalEnvMap: THREE.Texture;
+  gemEnvMap: THREE.Texture;
+  rawGemTexture: THREE.Texture;
+}
+
+/**
+ * Loads authentic studio HDR and EXR environment maps for precious metals
+ * and diamond optical scintillation.
+ */
+export async function loadStudioEnvironments(
+  pmremGenerator: THREE.PMREMGenerator
+): Promise<StudioEnvironments> {
+  const rgbeLoader = new RGBELoader();
+  const exrLoader = new EXRLoader();
+
+  const [metalHdr, gemExr] = await Promise.all([
+    rgbeLoader.loadAsync('/assets/environments/env_metal_studio.hdr'),
+    exrLoader.loadAsync('/assets/environments/env_gem_sparkle.exr'),
+  ]);
+
+  metalHdr.mapping = THREE.EquirectangularReflectionMapping;
+  gemExr.mapping = THREE.EquirectangularReflectionMapping;
+
+  const metalEnvMap = pmremGenerator.fromEquirectangular(metalHdr).texture;
+  const gemEnvMap = pmremGenerator.fromEquirectangular(gemExr).texture;
+
+  return { metalEnvMap, gemEnvMap, rawGemTexture: metalHdr };
 }
 
 /**
@@ -23,11 +55,11 @@ export function setupViewer(
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0xd4d4d4);
 
-  // 2. Camera: telephoto perspective matching reference (15 deg FOV)
+  // 2. Camera: telephoto perspective matching reference (15 deg FOV, calibrated close-up product framing)
   const aspect = width / height;
   const camera = new THREE.PerspectiveCamera(15, aspect, 0.1, 100);
   const mobileFactor = width < 768 ? Math.max(1.0, (768 / width) * 0.88) : 1.0;
-  camera.position.set(-0.024 * mobileFactor, 11.51 * mobileFactor, -4.22 * mobileFactor);
+  camera.position.set(-0.024 * mobileFactor, 10.5 * mobileFactor, -4.85 * mobileFactor);
 
   // 3. Renderer with ACESFilmic Tone Mapping for jewelry dynamic range
   const renderer = new THREE.WebGLRenderer({
@@ -39,35 +71,35 @@ export function setupViewer(
   renderer.setSize(width, height);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.35;
+  renderer.toneMappingExposure = 1.25;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
 
   // 4. OrbitControls with smooth damping and pitch bounds
   const controls = new OrbitControls(camera, canvas);
   controls.enableDamping = true;
   controls.dampingFactor = 0.05;
-  controls.target.set(0, -0.15, 0);
+  controls.target.set(0, -0.12, 0);
   controls.minDistance = 1.3;
   controls.maxDistance = 25.0;
   controls.maxPolarAngle = Math.PI / 2; // Prevent flipping beneath the table
 
-  // 5. Studio Directional & Ambient Lighting
-  const ambientLight = new THREE.AmbientLight(0xffffff, 1.8);
+  // 5. Studio Directional & Ambient Lighting (controlled fill preserving specular contrast)
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.45);
   scene.add(ambientLight);
 
-  const keyLight = new THREE.DirectionalLight(0xffffff, 3.5);
+  const keyLight = new THREE.DirectionalLight(0xffffff, 2.8);
   keyLight.position.set(0, 10, -5);
   scene.add(keyLight);
 
-  const fillLight = new THREE.DirectionalLight(0xf0f5ff, 2.0);
+  const fillLight = new THREE.DirectionalLight(0xf0f5ff, 1.5);
   fillLight.position.set(6, 6, -3);
   scene.add(fillLight);
 
-  const rimLight = new THREE.DirectionalLight(0xffffff, 2.5);
+  const rimLight = new THREE.DirectionalLight(0xffffff, 1.8);
   rimLight.position.set(-6, 6, -3);
   scene.add(rimLight);
 
-  const backRim = new THREE.DirectionalLight(0xfff6ea, 1.5);
+  const backRim = new THREE.DirectionalLight(0xfff6ea, 1.2);
   backRim.position.set(0, 8, 6);
   scene.add(backRim);
 
@@ -114,20 +146,21 @@ export function setupViewer(
   const envMap = pmremGenerator.fromScene(envScene).texture;
   scene.environment = envMap;
 
-  // 7. Ground Contact Shadow plane (measured radial blur ellipse)
+  // 7. Ground Contact Shadow plane (calibrated multi-layer contact occlusion)
   const shadowCanvas = document.createElement('canvas');
   shadowCanvas.width = 512;
   shadowCanvas.height = 512;
   const ctx = shadowCanvas.getContext('2d');
   if (ctx) {
-    const grad = ctx.createRadialGradient(256, 256, 10, 256, 256, 175);
-    grad.addColorStop(0, 'rgba(25, 25, 25, 0.75)');
-    grad.addColorStop(0.35, 'rgba(40, 40, 40, 0.55)');
-    grad.addColorStop(0.65, 'rgba(70, 70, 70, 0.18)');
+    const grad = ctx.createRadialGradient(256, 256, 12, 256, 256, 160);
+    grad.addColorStop(0, 'rgba(15, 15, 15, 0.95)');
+    grad.addColorStop(0.25, 'rgba(30, 30, 30, 0.72)');
+    grad.addColorStop(0.55, 'rgba(55, 55, 55, 0.28)');
+    grad.addColorStop(0.85, 'rgba(110, 110, 110, 0.05)');
     grad.addColorStop(1, 'rgba(255, 255, 255, 0)');
     ctx.fillStyle = grad;
     ctx.beginPath();
-    ctx.ellipse(256, 256, 190, 110, 0, 0, Math.PI * 2);
+    ctx.ellipse(256, 256, 175, 95, 0, 0, Math.PI * 2);
     ctx.fill();
   }
   const shadowTex = new THREE.CanvasTexture(shadowCanvas);
@@ -136,7 +169,7 @@ export function setupViewer(
     map: shadowTex,
     transparent: true,
     depthWrite: false,
-    opacity: 0.82,
+    opacity: 0.88,
   });
   const shadowMesh = new THREE.Mesh(shadowGeo, shadowMat);
   shadowMesh.rotation.x = -Math.PI / 2;
