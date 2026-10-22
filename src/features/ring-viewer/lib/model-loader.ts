@@ -8,26 +8,48 @@ export interface LoadedModels {
   eternityScene: THREE.Group;
 }
 
+// Global cached loader instance
+let gltfLoaderInstance: GLTFLoader | null = null;
+const modelCache = new Map<string, THREE.Group>();
+
+function getLoader(): GLTFLoader {
+  if (!gltfLoaderInstance) {
+    const loader = new GLTFLoader();
+    const dracoLoader = new DRACOLoader();
+    dracoLoader.setDecoderPath('/draco/gltf/');
+    loader.setDRACOLoader(dracoLoader);
+    gltfLoaderInstance = loader;
+  }
+  return gltfLoaderInstance;
+}
+
 /**
- * Loads and calibrates the ring GLB/DRACO assets.
+ * Loads a single GLB model with DRACO decompression and caching.
+ */
+export function loadModel(path: string): Promise<THREE.Group> {
+  const cached = modelCache.get(path);
+  if (cached) {
+    return Promise.resolve(cached.clone(true));
+  }
+
+  const loader = getLoader();
+  return new Promise((resolve, reject) => {
+    loader.load(
+      path,
+      (gltf) => {
+        modelCache.set(path, gltf.scene);
+        resolve(gltf.scene.clone(true));
+      },
+      undefined,
+      (error) => reject(error)
+    );
+  });
+}
+
+/**
+ * Loads and calibrates the default initial ring GLB/DRACO assets.
  */
 export async function loadRingModels(): Promise<LoadedModels> {
-  const loader = new GLTFLoader();
-  const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath('/draco/gltf/');
-  loader.setDRACOLoader(dracoLoader);
-
-  const loadModel = (path: string): Promise<THREE.Group> => {
-    return new Promise((resolve, reject) => {
-      loader.load(
-        path,
-        (gltf) => resolve(gltf.scene),
-        undefined,
-        (error) => reject(error)
-      );
-    });
-  };
-
   const [shankScene, headScene, eternityScene] = await Promise.all([
     loadModel('/assets/models/sh_pave_1.glb'),
     loadModel('/assets/models/hd_oval_10.glb'),
@@ -59,4 +81,17 @@ export async function loadRingModels(): Promise<LoadedModels> {
     headScene,
     eternityScene,
   };
+}
+
+/**
+ * Loads an eternity band model and applies standard stack positioning.
+ */
+export async function loadEternityModel(modelUrl: string): Promise<THREE.Group> {
+  const scene = await loadModel(modelUrl);
+  if (scene.children[0]) {
+    scene.children[0].position.set(0, 0, 0.32);
+  }
+  scene.position.set(0, 0, 0);
+  scene.scale.set(1, 1, 1);
+  return scene;
 }

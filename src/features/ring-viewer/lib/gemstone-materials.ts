@@ -2,49 +2,42 @@ import * as THREE from 'three';
 import { GemstoneOption } from '@/features/configurator/types/configurator.types';
 
 /**
- * Creates a physically-based material (MeshPhysicalMaterial) for cut gemstones.
+ * Creates gemstone materials for the jewelry scene.
  *
- * DIAMOND CORRECTION:
- * Real cut diamonds have high refractive transmission and mirror-like facet reflections.
- * In the baseline implementation, the diamond had color: 0xfcfdff with transmission: 0.35
- * and flatShading: true, which caused 65% of light to diffusely scatter as an opaque chalky
- * white substance (resembling a porcelain egg).
+ * Diamond Physical Configuration:
+ * - Pure optical transmission (90% transmission, 10% reflective facet presence)
+ * - True diamond refractive index (n = 2.417)
+ * - Three.js native spectral dispersion (0.044) for chromatic fire flashes
+ * - Mirror facet polish (roughness: 0.0, clearcoat: 1.0)
+ * - Volumetric depth attenuation (thickness: 2.8, attenuationDistance: 10.0)
+ * - Studio environment reflection intensity: 5.5
  *
- * Conversely, setting color to 0x000000 filters out 100% of transmitted light in Three.js,
- * resulting in an unnaturally black stone.
- *
- * The physically accurate Three.js diamond material:
- * - color: 0xffffff (pure optical transmission filter)
- * - transmission: 0.92 (92% refractive transmission)
- * - ior: 2.417 (true optical diamond index of refraction)
- * - dispersion: 0.044 (spectral chromatic dispersion / fire)
- * - roughness: 0.0 & clearcoat: 1.0 (mirror-polished facets)
- * - envMapIntensity: 4.5 (brilliant specular highlights from studio environment)
- * - thickness: 2.5 & attenuationDistance: 10.0 (volume depth)
- * - flatShading: false (preserves clean CAD facet vertex normals from Rhino/MatrixGold)
+ * Colored Gemstones:
+ * - Calibrated transmission tint, physical volume absorption, and specific IOR.
  */
 export function createGemstoneMaterial(
   gemstone: GemstoneOption,
-  isCenterstone: boolean = true
-): THREE.MeshPhysicalMaterial {
+  isCenterstone: boolean = true,
+  _envMap?: THREE.Texture | null
+): THREE.Material {
   const isDiamond = gemstone.id === 'diamond';
 
   if (isDiamond) {
     return new THREE.MeshPhysicalMaterial({
       name: isCenterstone ? 'Gem 01' : 'Gem 02',
       color: new THREE.Color(0xffffff),
-      transmission: 0.92,
+      transmission: isCenterstone ? 0.90 : 0.94,
       opacity: 1.0,
       transparent: true,
       roughness: 0.0,
       metalness: 0.0,
       ior: 2.417,
       reflectivity: 1.0,
-      envMapIntensity: isCenterstone ? 4.5 : 3.5,
+      envMapIntensity: isCenterstone ? 5.5 : 3.8,
       clearcoat: 1.0,
       clearcoatRoughness: 0.0,
       dispersion: 0.044,
-      thickness: isCenterstone ? 2.5 : 1.2,
+      thickness: isCenterstone ? 2.8 : 1.2,
       attenuationColor: new THREE.Color(0xffffff),
       attenuationDistance: 10.0,
       flatShading: false,
@@ -57,14 +50,14 @@ export function createGemstoneMaterial(
   return new THREE.MeshPhysicalMaterial({
     name: isCenterstone ? 'Gem 01' : 'Gem 02',
     color: gemTint,
-    transmission: 0.85,
+    transmission: 0.86,
     opacity: 1.0,
     transparent: true,
     roughness: 0.0,
     metalness: 0.0,
     ior: gemstone.ior,
     reflectivity: 1.0,
-    envMapIntensity: isCenterstone ? 4.0 : 3.0,
+    envMapIntensity: isCenterstone ? 4.2 : 3.2,
     clearcoat: 1.0,
     clearcoatRoughness: 0.0,
     dispersion: 0.02,

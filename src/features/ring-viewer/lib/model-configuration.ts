@@ -48,12 +48,13 @@ export function syncRingState(
   state: ConfiguratorState,
   shankScene: THREE.Group | null,
   headScene: THREE.Group | null,
-  eternityScene: THREE.Group | null
+  eternityScene: THREE.Group | null,
+  envMap?: THREE.Texture | null
 ): void {
-  // Generate active PBR materials
+  // Generate active PBR and optical materials
   const metalMat = createMetalMaterial(state.selectedMetal);
-  const centerGemMat = createGemstoneMaterial(state.selectedCenterstone, true);
-  const sideGemMat = createGemstoneMaterial(state.selectedSideDiamond, false);
+  const centerGemMat = createGemstoneMaterial(state.selectedCenterstone, true, envMap);
+  const sideGemMat = createGemstoneMaterial(state.selectedSideDiamond, false, envMap);
 
   const applyRoleMaterial = (mesh: THREE.Mesh, defaultRole: MeshRole) => {
     const role = identifyMeshRole(mesh, defaultRole);
@@ -75,14 +76,19 @@ export function syncRingState(
     });
   }
 
-  // 2. Update Head (center diamond/gem + prong metal) & Carat Scale
+  // 2. Update Head (center diamond/gem + prong metal) & Isolated Carat Scale
   if (headScene) {
     const s = state.selectedCarat.scale;
-    headScene.scale.set(s, s, s);
 
     headScene.traverse((child) => {
       if ((child as THREE.Mesh).isMesh) {
-        applyRoleMaterial(child as THREE.Mesh, 'metal');
+        const mesh = child as THREE.Mesh;
+        const role = identifyMeshRole(mesh, 'metal');
+        // Isolate carat scaling to the gemstone so prongs retain their true proportions
+        if (role === 'centerGem') {
+          mesh.scale.set(s, s, s);
+        }
+        applyRoleMaterial(mesh, 'metal');
       }
     });
   }

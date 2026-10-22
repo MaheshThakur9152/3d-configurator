@@ -71,13 +71,12 @@ export function setupViewer(
   backRim.position.set(0, 8, 6);
   scene.add(backRim);
 
-  // 6. Studio PMREM Environment with high-contrast softboxes and specular spots
-  // Diamond scintillation requires high dynamic range contrast between bright highlights and dark gaps
+  // 6. Studio PMREM Environment with balanced ambient luminance and high-contrast sparkle strips
   const pmremGenerator = new THREE.PMREMGenerator(renderer);
   pmremGenerator.compileEquirectangularShader();
 
   const envScene = new THREE.Scene();
-  envScene.background = new THREE.Color(0x181a1e);
+  envScene.background = new THREE.Color(0x9aa0a6); // Luminous studio ambient gray (prevents black facet extinction)
 
   const addLightPanel = (
     w: number,
@@ -99,18 +98,18 @@ export function setupViewer(
     envScene.add(mesh);
   };
 
-  // Softbox panels for smooth metal reflections
-  addLightPanel(35, 35, [0, 25, 0], 1.2, [Math.PI / 2, 0, 0]); // Overhead primary
-  addLightPanel(25, 25, [-15, 12, -15], 1.0);                  // Front-left
-  addLightPanel(25, 25, [15, 12, -15], 1.0);                   // Front-right
-  addLightPanel(25, 20, [0, 15, 18], 0.9);                     // Back-top
-  addLightPanel(15, 15, [0, -10, -10], 0.4);                   // Low ground bounce
+  // Overhead softbox array for continuous metal highlights
+  addLightPanel(40, 40, [0, 25, 0], 2.0, [Math.PI / 2, 0, 0]); // Primary top
+  addLightPanel(30, 30, [-15, 15, -15], 1.8);                  // Front-left
+  addLightPanel(30, 30, [15, 15, -15], 1.8);                   // Front-right
+  addLightPanel(30, 25, [0, 18, 18], 1.5);                     // Back-top
+  addLightPanel(20, 20, [0, -8, -8], 0.8);                     // Ground fill
 
-  // High-intensity pin-point accent spots for diamond facet fire and sparkle
-  addLightPanel(4, 4, [-6, 18, -4], 4.0);
-  addLightPanel(4, 4, [6, 18, -4], 4.0);
-  addLightPanel(3, 8, [0, 22, -8], 3.5);
-  addLightPanel(5, 5, [10, 8, 8], 3.0);
+  // High-intensity pin-point accent spots for diamond fire and scintillation
+  addLightPanel(5, 5, [-8, 20, -6], 4.5);
+  addLightPanel(5, 5, [8, 20, -6], 4.5);
+  addLightPanel(4, 10, [0, 24, -10], 4.0);
+  addLightPanel(6, 6, [12, 12, 8], 3.8);
 
   const envMap = pmremGenerator.fromScene(envScene).texture;
   scene.environment = envMap;
