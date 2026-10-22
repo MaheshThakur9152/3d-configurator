@@ -1,8 +1,9 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { ConfiguratorState } from '@/features/configurator/types/configurator.types';
+import { SemanticMeshRole } from '@/features/shared-viewer';
 
-export type MeshRole = 'metal' | 'centerGem' | 'sideGem';
+export type MeshRole = SemanticMeshRole;
 
 export interface RingViewerProps {
   state: ConfiguratorState;

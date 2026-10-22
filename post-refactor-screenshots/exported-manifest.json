@@ -1,0 +1,38 @@
+{
+  "id": "prod_1792675932808",
+  "title": "Custom Jewellery Piece",
+  "category": "ring",
+  "modelFileName": "ring-p25696.glb",
+  "fileSizeMB": 0,
+  "meshCount": 5,
+  "totalTriangles": 53262,
+  "roles": {
+    "Metal_02": "metal",
+    "Metal_02_1": "metal",
+    "Metal_02_2": "metal",
+    "Diamond_Oval": "centerGem",
+    "Metal_02_3": "metal"
+  },
+  "capabilities": {
+    "supportedMetals": [
+      "white_gold",
+      "yellow_gold",
+      "rose_gold",
+      "platinum"
+    ],
+    "supportedGemstones": [
+      "diamond",
+      "blue_sapphire",
+      "ruby",
+      "emerald"
+    ],
+    "supportedCarats": [
+      0.5,
+      1,
+      1.5,
+      2
+    ],
+    "allowEternityStack": true
+  },
+  "createdAt": "2026-10-22T13:32:12.808Z"
+}

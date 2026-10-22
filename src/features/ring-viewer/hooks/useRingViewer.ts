@@ -111,7 +111,8 @@ export function useRingViewer(state: ConfiguratorState): UseRingViewerReturn {
             shankMeshGroup.current,
             headMeshGroup.current,
             eternityMeshGroup.current,
-            rawGemTexture || gemEnvMap
+            rawGemTexture || gemEnvMap,
+            metalEnvMap
           );
           triggerRender();
         }
@@ -193,7 +194,8 @@ export function useRingViewer(state: ConfiguratorState): UseRingViewerReturn {
           shankMeshGroup.current,
           headMeshGroup.current,
           newEternityScene,
-          rawGemTextureRef.current || gemEnvMapRef.current || sceneRef.current?.environment
+          rawGemTextureRef.current || gemEnvMapRef.current || sceneRef.current?.environment,
+          metalEnvMapRef.current
         );
         requestRenderRef.current();
       })
@@ -207,7 +209,8 @@ export function useRingViewer(state: ConfiguratorState): UseRingViewerReturn {
       shankMeshGroup.current,
       headMeshGroup.current,
       eternityMeshGroup.current,
-      rawGemTextureRef.current || gemEnvMapRef.current || sceneRef.current?.environment
+      rawGemTextureRef.current || gemEnvMapRef.current || sceneRef.current?.environment,
+      metalEnvMapRef.current
     );
     requestRenderRef.current();
   }, [

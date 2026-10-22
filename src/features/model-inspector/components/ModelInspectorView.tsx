@@ -22,6 +22,7 @@ export const ModelInspectorView: React.FC = () => {
     assignRole,
     selectNode,
     exportProductManifest,
+    importProductManifest,
   } = useModelInspector();
 
   return (
@@ -81,6 +82,15 @@ export const ModelInspectorView: React.FC = () => {
               }`}
               style={{ backgroundColor: '#e89a82' }}
               title="Rose Gold"
+            />
+            <button
+              type="button"
+              onClick={() => setPreviewMetalId('platinum')}
+              className={`w-6 h-6 rounded-full border-2 transition-transform ${
+                previewMetalId === 'platinum' ? 'border-gray-900 scale-110 shadow-xs' : 'border-gray-300'
+              }`}
+              style={{ backgroundColor: '#c8cbce' }}
+              title="Platinum"
             />
           </div>
         )}
@@ -153,19 +163,40 @@ export const ModelInspectorView: React.FC = () => {
 
         {/* Bottom Publish & Export CTA */}
         {meshNodes.length > 0 && (
-          <div className="p-4 md:p-6 bg-white border-t border-gray-100 flex-shrink-0">
+          <div className="p-4 md:p-6 bg-white border-t border-gray-100 flex-shrink-0 flex flex-col gap-2">
             <button
               type="button"
               onClick={exportProductManifest}
-              className="w-full py-3 bg-gray-900 hover:bg-black text-white text-xs font-bold tracking-wider uppercase flex items-center justify-center gap-2 rounded-lg transition-colors shadow-sm cursor-pointer"
+              className="w-full py-2.5 bg-gray-900 hover:bg-black text-white text-xs font-bold tracking-wider uppercase flex items-center justify-center gap-2 rounded-lg transition-colors shadow-xs cursor-pointer"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
               <span>Export Product Manifest JSON</span>
             </button>
+
+            <label className="w-full py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold tracking-wider uppercase flex items-center justify-center gap-2 rounded-lg transition-colors cursor-pointer text-center">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+              <span>Import Manifest JSON</span>
+              <input
+                type="file"
+                accept=".json"
+                className="hidden"
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (file) {
+                    importProductManifest(file);
+                    e.target.value = '';
+                  }
+                }}
+              />
+            </label>
           </div>
         )}
       </aside>

@@ -1,14 +1,17 @@
 import * as THREE from 'three';
 
 /**
- * Clean-Room Real-Time Optical Diamond Shader
+ * Clean-Room Real-Time Optical Diamond Shader (Artistic TIR Approximation)
  *
- * Implements physical gemstone optics:
- * 1. Fresnel external specular reflectance (F0 ~ 0.172 for diamond n=2.417)
+ * Implements real-time gemstone optical heuristics:
+ * 1. Fresnel external specular reflectance (Schlick approximation with F0 ~ 0.172 for diamond n=2.417)
  * 2. Chromatic spectral dispersion (Cauchy formula splitting R, G, B ray refractions)
- * 3. Total Internal Reflection (TIR) with multi-bounce facet scattering
+ * 3. Directional Total Internal Reflection (TIR) approximation:
+ *    NOTE: Uses idealized 41-degree quadrant pavilion normal reflection vectors
+ *    rather than full offline BVH ray tracing against arbitrary geometric facets.
+ *    This produces real-time brilliance with 0 ray-march steps.
  * 4. Facet contrast & extinction bands for crisp diamond scintillation
- * 5. Environment map sampling from Three.js scene environment
+ * 5. Environment map sampling from equirectangular spherical EXR source texture
  */
 
 const DiamondVertexShader = /* glsl */ `

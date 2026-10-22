@@ -22,13 +22,20 @@ export function createGemstoneMaterial(
 
   if (isDiamond) {
     if (isCenterstone && envMap) {
-      return createDiamondShaderMaterial({
-        envMap,
-        envMapIntensity: 1.4,
-        refractiveIndex: 2.417,
-        dispersion: 0.044,
-        boost: 1.25,
-      });
+      try {
+        return createDiamondShaderMaterial({
+          envMap,
+          envMapIntensity: 1.4,
+          refractiveIndex: 2.417,
+          dispersion: 0.044,
+          boost: 1.25,
+        });
+      } catch (err) {
+        console.warn(
+          '[GemstoneMaterial] Custom diamond shader failed, falling back to MeshPhysicalMaterial:',
+          err
+        );
+      }
     }
 
     const mat = new THREE.MeshPhysicalMaterial({
