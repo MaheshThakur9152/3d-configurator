@@ -56,7 +56,7 @@ export async function loadJewelleryEnvironments(
         err
       );
 
-      // Create deterministic procedural fallback textures
+      // Create deterministic procedural PMREM fallback for PBR materials
       const fallbackScene = new THREE.Scene();
       fallbackScene.background = new THREE.Color(0x9aa0a6);
 
@@ -79,10 +79,34 @@ export async function loadJewelleryEnvironments(
 
       const fallbackTexture = pmremGenerator.fromScene(fallbackScene).texture;
 
+      // Create a genuine 2D equirectangular canvas texture for the custom diamond shader fallback
+      // Never pass a PMREM/CubeUV texture to an equirectangular UV sampler!
+      const canvas = typeof document !== 'undefined' ? document.createElement('canvas') : null;
+      let rawEquirectFallback: THREE.Texture;
+      if (canvas) {
+        canvas.width = 512;
+        canvas.height = 256;
+        const ctx = canvas.getContext('2d');
+        if (ctx) {
+          ctx.fillStyle = '#9aa0a6';
+          ctx.fillRect(0, 0, 512, 256);
+          ctx.fillStyle = '#ffffff';
+          ctx.fillRect(100, 30, 80, 80);
+          ctx.fillRect(332, 30, 80, 80);
+          ctx.fillRect(216, 10, 80, 60);
+        }
+        rawEquirectFallback = new THREE.CanvasTexture(canvas);
+        rawEquirectFallback.mapping = THREE.EquirectangularReflectionMapping;
+      } else {
+        // Fallback for headless testing
+        rawEquirectFallback = new THREE.DataTexture(new Uint8Array([154, 160, 166, 255]), 1, 1);
+        rawEquirectFallback.mapping = THREE.EquirectangularReflectionMapping;
+      }
+
       cachedEnvironments = {
         metalPmrem: fallbackTexture,
         gemPmrem: fallbackTexture,
-        gemEquirectangular: fallbackTexture,
+        gemEquirectangular: rawEquirectFallback, // Guaranteed raw 2D equirectangular texture
         proceduralFallback: true,
       };
 

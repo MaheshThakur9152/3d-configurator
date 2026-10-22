@@ -25,10 +25,11 @@ export function createGemstoneMaterial(
       try {
         return createDiamondShaderMaterial({
           envMap,
-          envMapIntensity: 1.4,
+          envMapIntensity: 2.5,
           refractiveIndex: 2.417,
           dispersion: 0.044,
-          boost: 1.25,
+          boost: 1.45,
+          facetExtinction: 0.35,
         });
       } catch (err) {
         console.warn(
@@ -41,14 +42,14 @@ export function createGemstoneMaterial(
     const mat = new THREE.MeshPhysicalMaterial({
       name: isCenterstone ? 'Gem 01' : 'Gem 02',
       color: new THREE.Color(0x0a0a0a), // Zero diffuse chalk - pure specular & internal refraction
-      transmission: isCenterstone ? 0.78 : 0.22,
+      transmission: isCenterstone ? 0.88 : 0.28,
       opacity: 1.0,
       transparent: true,
       roughness: 0.0,
       metalness: 0.0,
       ior: 2.417,
       reflectivity: 1.0,
-      envMapIntensity: isCenterstone ? 4.0 : 2.8,
+      envMapIntensity: isCenterstone ? 4.0 : 3.0,
       clearcoat: 1.0,
       clearcoatRoughness: 0.0,
       dispersion: 0.044,
