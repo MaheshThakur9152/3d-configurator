@@ -56,6 +56,7 @@ export function useRingViewer(state: ConfiguratorState): UseRingViewerReturn {
     rendererRef.current = renderer;
     controlsRef.current = controls;
     ringGroupRef.current = ringGroup;
+    (window as any).__viewerRenderer = renderer;
 
     let isDisposed = false;
     let renderRequested = true;

@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
+import { optimizeSceneGeometry } from '@/features/shared-viewer/lib/GeometryOptimizer';
 
 export interface LoadedModels {
   shankScene: THREE.Group;
@@ -76,6 +77,11 @@ export async function loadRingModels(): Promise<LoadedModels> {
   eternityScene.scale.set(1, 1, 1);
   eternityScene.visible = false;
 
+  // Task 4.2: Optimize static geometries to minimize draw calls
+  optimizeSceneGeometry(shankScene);
+  optimizeSceneGeometry(headScene);
+  optimizeSceneGeometry(eternityScene);
+
   return {
     shankScene,
     headScene,
@@ -93,5 +99,6 @@ export async function loadEternityModel(modelUrl: string): Promise<THREE.Group> 
   }
   scene.position.set(0, 0, 0);
   scene.scale.set(1, 1, 1);
+  optimizeSceneGeometry(scene);
   return scene;
 }
