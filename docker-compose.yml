@@ -1,0 +1,49 @@
+services:
+  configurator-api:
+    build:
+      context: .
+      dockerfile: services/configurator-api/Dockerfile
+    container_name: jewel-configurator-api
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - HOST=0.0.0.0
+      - NODE_ENV=production
+      - STORAGE_DRIVER=local
+      - STORAGE_LOCAL_PATH=/data/storage
+      - MEDUSA_BACKEND_URL=${MEDUSA_BACKEND_URL:-http://localhost:9000}
+      - CORS_ORIGIN=${CORS_ORIGIN:-http://localhost:3000}
+    volumes:
+      - asset-data:/data/storage
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/health"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+
+  configurator-web:
+    build:
+      context: .
+      dockerfile: apps/configurator/Dockerfile
+    container_name: jewel-configurator-web
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_API_URL=http://localhost:8080
+    depends_on:
+      configurator-api:
+        condition: service_healthy
+    volumes:
+      - asset-data:/usr/share/nginx/html/storage:ro
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost/"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+
+volumes:
+  asset-data:
+    driver: local

@@ -1,0 +1,32 @@
+{
+  "name": "jewellery-3d-configurator-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise-grade standalone 3D diamond ring configurator with MedusaJS integration",
+  "workspaces": [
+    "packages/*",
+    "services/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=@configurator/contracts && npm run build --workspace=@configurator/api && npm run build --workspace=@configurator/web",
+    "test": "npm run test --workspaces --if-present",
+    "dev:web": "npm run dev --workspace=@configurator/web",
+    "dev:api": "npm run dev --workspace=@configurator/api"
+  },
+  "keywords": [
+    "threejs",
+    "react-three-fiber",
+    "jewellery",
+    "configurator",
+    "medusa",
+    "webgl",
+    "pbr"
+  ],
+  "author": "Mahesh Thakur",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaheshThakur9152/3d-configurator.git"
+  },
+  "license": "MIT"
+}
